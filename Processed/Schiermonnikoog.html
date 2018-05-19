@@ -1,19 +1,19 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3.org/TR/html4/loose.dtd">
-<!-- This HTML file has been automatically generated from an XML source on 2015-12-25T14:49:16Z. -->
+<!-- This HTML file has been automatically generated from an XML source on 2018-05-19T13:15:19Z using SAXON HE 9.8.0.7 . -->
 <html lang="nl">
 <head>
 <meta name="generator" content=
 "HTML Tidy for Windows (vers 25 March 2009), see www.w3.org">
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
 <title>Het eiland Schiermonnikoog en zijne bewoners</title>
-<meta http-equiv="content-type" content="text/html; charset=us-ascii">
 <meta name="generator" content=
-"tei2html.xsl, see http://code.google.com/p/tei2html/">
-<meta name="author" content="Francis Allan">
+"tei2html.xsl, see https://github.com/jhellingman/tei2html">
+<meta name="author" content="Francis Allan (1826&ndash;1908)">
 <link rel="coverpage" href="images/new-cover.jpg">
 <link rel="schema.DC" href=
 "http://dublincore.org/documents/1998/09/dces/">
-<meta name="DC.Creator" content="Francis Allan">
+<meta name="DC.Creator" content="Francis Allan (1826&ndash;1908)">
 <meta name="DC.Title" content=
 "Het eiland Schiermonnikoog en zijne bewoners">
 <meta name="DC.Date" content="2013-11-18">
@@ -79,8 +79,7 @@ margin-left: auto;
 margin-right: auto;
 text-align: center;
 }
-p.argument, p.note, p.tocArgument, .par.argument, .par.note, .par.tocArgument
-{
+p.argument, p.note, p.tocArgument, .par.argument, .par.note, .par.tocArgument {
 font-size: 0.9em;
 line-height: 1.2em;
 text-indent: 0;
@@ -126,23 +125,16 @@ clear: both;
 padding-top: 2.4em;
 padding-bottom: 1.6em;
 }
+span.abbr, abbr {
+white-space: nowrap;
+}
 span.parnum {
 font-weight: bold;
-}
-.pagenum {
-display: inline;
-font-size: 70%;
-font-style: normal;
-margin: 0;
-padding: 0;
-position: absolute;
-right: 1%;
-text-align: right;
 }
 span.corr, span.gap {
 border-bottom: 1px dotted red;
 }
-span.abbr {
+span.num, span.trans, span.trans {
 border-bottom: 1px dotted gray;
 }
 span.measure {
@@ -162,6 +154,9 @@ font-family: monospace;
 }
 .underline {
 text-decoration: underline;
+}
+sup {
+line-height: 6pt;
 }
 .overline, .overtilde {
 text-decoration: overline;
@@ -222,12 +217,12 @@ line-height: 0.8em;
 font-size: 420%;
 vertical-align: super;
 }
-p.quote, div.blockquote, div.argument, .par.quote {
+blockquote, p.quote, div.blockquote, div.argument, .par.quote {
 font-size: 0.9em;
 line-height: 1.2em;
 margin: 1.58em 5%;
 }
-.pagenum a, a.noteref:hover, a.hidden:hover, a.hidden {
+.pagenum a, a.noteref:hover, a.pseudonoteref:hover, a.hidden:hover, a.hidden {
 text-decoration: none;
 }
 ul {
@@ -239,6 +234,18 @@ border: black 1px dotted;
 color: #000;
 margin: 2em 5%;
 padding: 1em;
+}
+.itemGroupTable {
+border-collapse: collapse;
+margin-left: 0;
+}
+.itemGroupTable td {
+padding: 0;
+margin: 0;
+vertical-align: middle;
+}
+.itemGroupBrace {
+padding: 0 0.5em !important;
 }
 .footnotes .body, .footnotes .div1 {
 padding: 0;
@@ -277,22 +284,8 @@ width: 2em;
 height: 12pt;
 display: block;
 }
-.marginnote {
-font-size: 0.8em;
-height: 0;
-left: 1%;
-line-height: 1.2em;
-position: absolute;
-text-indent: 0;
-width: 14%;
-}
 .apparatusnote {
 text-decoration: none;
-}
-span.tocPageNum, span.flushright {
-position: absolute;
-right: 16%;
-top: auto;
 }
 table.tocList {
 width: 100%;
@@ -467,7 +460,7 @@ vertical-align: top;
 tr, td, th {
 vertical-align: top;
 }
-td.bottom {
+tr.bottom, td.bottom, th.bottom {
 vertical-align: bottom;
 }
 td.label, tr.label td {
@@ -475,6 +468,9 @@ font-weight: bold;
 }
 td.unit, tr.unit td {
 font-style: italic;
+}
+td.leftbrace, td.rightbrace {
+vertical-align: middle;
 }
 span.sum {
 padding-top: 2px;
@@ -545,9 +541,70 @@ border-left: 2px solid black;
 table.borderAll .cellRight, table.borderAll .cellHeadRight {
 border-right: 2px solid black;
 }
+tr.borderTop td, tr.borderTop th, th.borderTop, td.borderTop {
+border-top: 1px solid black !important;
+}
+tr.borderRight td, tr.borderRight th, th.borderRight, td.borderRight {
+border-right: 1px solid black !important;
+}
+tr.borderLeft td, tr.borderLeft th, th.borderLeft, td.borderLeft {
+border-left: 1px solid black !important;
+}
+tr.borderBottom td, tr.borderBottom th, th.borderBottom, td.borderBottom {
+border-bottom: 1px solid black !important;
+}
+tr.borderHorizontal td, tr.borderHorizontal th, th.borderHorizontal, td.borderHorizontal {
+border-top: 1px solid black !important;
+border-bottom: 1px solid black !important;
+}
+tr.borderVertical td, tr.borderVertical th, th.borderVertical, td.borderVertical {
+border-right: 1px solid black !important;
+border-left: 1px solid black !important;
+}
+tr.borderAll td, tr.borderAll th, th.borderAll, td.borderAll {
+border: 1px solid black !important;
+}
+tr.noBorderTop td, tr.noBorderTop th, th.noBorderTop, td.noBorderTop {
+border-top: none !important;
+}
+tr.noBorderRight td, tr.noBorderRight th, th.noBorderRight, td.noBorderRight {
+border-right: none !important;
+}
+tr.noBorderLeft td, tr.noBorderLeft th, th.noBorderLeft, td.noBorderLeft {
+border-left: none !important;
+}
+tr.noBorderBottom td, tr.noBorderBottom th, th.noBorderBottom, td.noBorderBottom {
+border-bottom: none !important;
+}
+tr.noBorderHorizontal td, tr.noBorderHorizontal th, th.noBorderHorizontal, td.noBorderHorizontal {
+border-top: none !important;
+border-bottom: none !important;
+}
+tr.noBorderVertical td, tr.noBorderVertical th, th.noBorderVertical, td.noBorderVertical {
+border-right: none !important;
+border-left: none !important;
+}
+tr.borderAll td, tr.borderAll th, th.borderAll, td.noBorderAll {
+border: none !important;
+}
 .cellDoubleUp {
 border: 0px solid black !important;
 width: 1em;
+}
+td.alignDecimalIntegerPart {
+text-align: right;
+border-right: none !important;
+padding-right: 0 !important;
+margin-right: 0 !important;
+}
+td.alignDecimalFractionPart {
+text-align: left;
+border-left: none !important;
+padding-left: 0 !important;
+margin-left: 0 !important;
+}
+td.alignDecimalNotNumber {
+text-align: center;
 }
 .lgouter {
 margin-left: auto;
@@ -576,9 +633,9 @@ p.line, .par.line {
 margin: 0 0% 0 0%;
 }
 span.hemistich {
-color: white;
+visibility: hidden;
 }
-.versenum {
+.verseNum {
 font-weight: bold;
 }
 .speaker {
@@ -592,35 +649,64 @@ text-align: left;
 .castlist, .castitem {
 list-style-type: none;
 }
-table.intralinear {
-display: inline-table;
+.castGroupTable {
 border-collapse: collapse;
+margin-left: 0;
 }
-table.intralinear td {
-font-size: small;
+.castGroupTable td {
+padding: 0;
+margin: 0;
+vertical-align: middle;
+}
+.castGroupBrace {
+padding: 0 0.5em !important;
+}
+span.ditto {
+display: inline-block;
+vertical-align: middle;
 text-align: center;
 }
-table.ditto {
-display: inline-table;
-border-collapse: collapse;
-vertical-align: bottom;
-}
-table.ditto tr.s {
+span.ditto span.s {
 height: 0;
-color: white;
+visibility: hidden;
 line-height: 0;
 }
-table.ditto tr.s td {
-padding: 0px;
-border-style: none;
-}
-table.ditto tr.d td {
+span.ditto span.d {
+display: block;
 text-align: center;
-line-height: 10pt;
-border-style: none;
+line-height: 8pt;
+}
+span.ditto span.i {
+position: relative;
+top: -2px;
 }
 body {
 padding: 1.58em 16%;
+}
+.pagenum {
+display: inline;
+font-size: 70%;
+font-style: normal;
+margin: 0;
+padding: 0;
+position: absolute;
+right: 1%;
+text-align: right;
+}
+.marginnote {
+font-size: 0.8em;
+height: 0;
+left: 1%;
+line-height: 1.2em;
+position: absolute;
+text-indent: 0;
+width: 14%;
+text-align: left;
+}
+span.tocPageNum, span.flushright {
+position: absolute;
+right: 16%;
+top: auto;
 }
 .pglink, .catlink, .exlink, .wplink, .biblink, .seclink {
 background-repeat: no-repeat;
@@ -666,14 +752,13 @@ text-align: center;
 font-style: italic;
 margin-bottom: 2em;
 }
-.figureHead, .noteref, .pseudonoteref, .marginnote, p.legend, .versenum
-{
+.figureHead, .noteref, .pseudonoteref, .marginnote, p.legend, .verseNum {
 color: #660000;
 }
 .rightnote, .pagenum, .linenum, .pagenum a {
 color: #AAAAAA;
 }
-a.hidden:hover, a.noteref:hover {
+a.hidden:hover, a.noteref:hover, a.pseudonoteref:hover {
 color: red;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -692,43 +777,38 @@ speak: none;
 
 <style type="text/css">
 /* CSS rules generated from @rend attributes in TEI file */
-.xd21e101width
-{
+.cover-imagewidth {
 width:480px;
 }
-.xd21e108width
-{
+.titlepage-imagewidth {
 width:433px;
 }
-.xd21e974
-{
+.xd27e968 {
 text-indent:2em;
 }
-.xd21e1016
-{
+.xd27e1010 {
 text-align:left;
 }
-@media handheld
-{
+@media handheld {
 }
+/* CSS rules copied from @style attributes in TEI file */
 </style>
 </head>
 <body>
 <div class="front">
 <div class="div1 cover">
 <div class="divBody">
-<p class="par first"></p>
-<div class="figure xd21e101width"><img src="images/new-cover.jpg" alt=
-"Nieuw ontworpen voorkant." width="480" height="720"></div>
-<p class="par"></p>
+<p class="first"></p>
+<div class="figure cover-imagewidth"><img src="images/new-cover.jpg"
+alt="Nieuw ontworpen voorkant." width="480" height="720"></div>
 </div>
 </div>
 <div class="div1 titlepage">
 <div class="divBody">
-<p class="par first"></p>
-<div class="figure xd21e108width"><img src="images/titlepage.png" alt=
-"Oorspronkelijke titelpagina." width="433" height="720"></div>
-<p class="par"></p>
+<p class="first"></p>
+<div class="figure titlepage-imagewidth"><img src=
+"images/titlepage.png" alt="Oorspronkelijke titelpagina." width="433"
+height="720"></div>
 </div>
 </div>
 <div class="titlePage">
@@ -751,7 +831,7 @@ WEIJTINGH &amp; <span class="sc">VAN DER</span> HAART.<br>
 <h2 class="main">VOORWOORD.</h2>
 </div>
 <div class="divBody">
-<p class="par first"><i>Het was naar aanleiding van eenige door mij
+<p class="first"><i>Het was naar aanleiding van eenige door mij
 geschreven werkjes, over sommige <span class=
 "ex">Noord-Hollandsche</span> Eilanden, dat ik door eenige mijner
 vrienden en betrekkingen, (geboren Schiermonnikoogers) op wier
@@ -762,11 +842,11 @@ ter zijde te zullen staan, zette ik mij neder ter vervaardiging van het
 Werkje, dat ik hierbij, mijnen Landgenooten in het algemeen, en den
 Schiermonnikoogers in het bijzonder, met bescheidenheid
 aanbiede.</i></p>
-<p class="par"><i>Terwijl ik tevens mijnen dank betuig aan die allen,
-welke mij met hunne inlichtingen wel hebben willen dienen.</i></p>
-<p class="par"><i>Moge het vele lezers vinden!</i></p>
-<p class="par signed"><span class="ex">Eiland Marken</span>,
-<span class="sc">F. Allan.</span><br>
+<p><i>Terwijl ik tevens mijnen dank betuig aan die allen, welke mij met
+hunne inlichtingen wel hebben willen dienen.</i></p>
+<p><i>Moge het vele lezers vinden!</i></p>
+<p class="signed"><span class="ex">Eiland Marken</span>, <span class=
+"sc">F. Allan.</span><br>
 den 1 Febr. 1856. <span class="pagenum">[<a id="pb5" href="#pb5" name=
 "pb5">5</a>]</span></p>
 </div>
@@ -778,29 +858,29 @@ den 1 Febr. 1856. <span class="pagenum">[<a id="pb5" href="#pb5" name=
 <h2 class="main">HET EILAND SCHIERMONNIKOOG EN ZIJNE BEWONERS.</h2>
 </div>
 <div class="divBody">
-<p class="par first">Het in zoo vele opzigten belangrijke eiland
+<p class="first">Het in zoo vele opzigten belangrijke eiland
 <span class="sc">Schiermonnikoog</span>, dat inzonderheid door de
 geheel eigenaardige <i>taal</i> der bewoners, zich van de overige
 Nederlandsche dialecten onderscheidt, maakt tegenwoordig eene der
 grietenijen van de provincie Friesland uit, en behoort als zoodanig,
 tot het <i>Arrondissement</i> <span class="ex">Leeuwarden</span>,
 <i>Kanton</i> <span class="ex">Dockum</span>.</p>
-<p class="par">Ten Noorden omspoeld door <span class="ex">de
-Noordzee</span>, en ten Oosten door <span class="ex">de Lauwer</span>,
-is het ten Zuiden begrensd door <span class="ex">de Wadden</span>, en
-ten Westen door de uitwatering van <span class="ex">de Hunse</span>,
-welke <span class="ex">het Groninger-Diep</span> wordt geheeten. Dit
-water loopt, na zijne zamenvloeijing met de mondingen der <span class=
+<p>Ten Noorden omspoeld door <span class="ex">de Noordzee</span>, en
+ten Oosten door <span class="ex">de Lauwer</span>, is het ten Zuiden
+begrensd door <span class="ex">de Wadden</span>, en ten Westen door de
+uitwatering van <span class="ex">de Hunse</span>, welke <span class=
+"ex">het Groninger-Diep</span> wordt geheeten. Dit water loopt, na
+zijne zamenvloeijing met de mondingen der <span class=
 "ex">Dockumer-Nieuwezijlen</span> (<i>de Ecumazijl</i> en
 <i>Munnekezijl</i>,) bij <span class="ex">Oostmahorn</span>, door het
 zoogenoemde <span class="ex">Friesche-Gat</span>, tusschen de Friesche
 kust en dit eiland, in de Noordzee.&mdash;</p>
-<p class="par">De gemiddelde diepte van dit zeegat, dat vooral door
-zijnen sterken stroom, bij den zeeman bekend is, bedraagt 18&ndash;36
-voeten. De stroom heeft te dezer plaats zulk eene groote kracht, dat
-men er, zelfs gedurende de strengste winters, geen ijs aantreft. Dit is
-echter niet het geval aan het andere <span class="pagenum">[<a id="pb6"
-href="#pb6" name="pb6">6</a>]</span>einde van het eiland. De ruimte van
+<p>De gemiddelde diepte van dit zeegat, dat vooral door zijnen sterken
+stroom, bij den zeeman bekend is, bedraagt 18&ndash;36 voeten. De
+stroom heeft te dezer plaats zulk eene groote kracht, dat men er, zelfs
+gedurende de strengste winters, geen ijs aantreft. Dit is echter niet
+het geval aan het andere <span class="pagenum">[<a id="pb6" href="#pb6"
+name="pb6">6</a>]</span>einde van het eiland. De ruimte van
 d&aacute;&aacute;r tot aan de vaste kust der provincie Groningen,
 bestaat geheel uit Wadden en Zandvlakten, die bij gewone
 we&ecirc;rsgesteldheid, met laag water of ebbe, telkenreize, bijna
@@ -812,12 +892,12 @@ niet alleen de afstand groot, maar ook, omdat de grond op sommige
 plaatsen zeer los en moerassig is.&mdash;Gedurende strenge winters en
 aanhoudende koude, bedient men zich van het ijs, om den vasten wal te
 naderen.&mdash;</p>
-<p class="par">De geographische ligging van <span class=
-"sc">Schiermonnikoog</span>, Is 53&deg;, 28&prime;, 47&Prime; N.B., en
+<p>De geographische ligging van <span class=
+"sc">Schiermonnikoog</span>, is 53&deg;, 28&prime;, 47&Prime; N.B., en
 bijna 23&frac12;&deg; O.L.&mdash;; de afstand van de Friesche kust
 1&frac12; uur, van de Groninger kust en van het eiland Ameland 3
 uur.</p>
-<p class="par">Omtrent den naamsoorsprong van <span class=
+<p>Omtrent den naamsoorsprong van <span class=
 "sc">Schiermonnikoog</span> bestaat verschil van gevoelen. Naar
 sommiger meening zou dit eiland zijnen naam gekregen hebben van zekere
 monnik-orde of konvent, tot welks toenmalige bezittingen het behoorde.
@@ -855,33 +935,32 @@ terwijl evenzoo de voornaamste bezittingen van de aanzienlijke
 geslachten der <span class="ex">Harmana&rsquo;s</span>, <span class=
 "ex">Harlinga&rsquo;s</span> en <span class=
 "ex">Haltema&rsquo;s</span>, in de diepte bedolven zijn.</p>
-<p class="par">Oudtijds werd het eiland <span class=
-"ex">Monnikoog</span> genoemd, waarschijnlijk eene afleiding of
-verbastering van het Latijnsche <i>Monicoga</i>, waarbij later het
-woorde <i>Schier</i> of <i>Scheer</i> gevoegd is, omtrent welks
-beteekenis verschillende meeningen bestaan. Volgens sommigen komt het
-woordje <i>Schier</i> af van de <i>Schiere</i>, d. i. grijze of graauwe
-mantels en kappen, welke de kloosterlingen zouden gedragen hebben. Is
-dit gevoelen, waarmede wij geheel instemmen, waar, dan volgt daaruit
-ook, dat er veel waarschijnlijkheid bestaat voor de meening, dat op het
-eiland zelve, en dus niet daar buiten, een klooster gestaan
-hebbe.&mdash;</p>
-<p class="par">Anderen nemen aan, dat de kloosterbroeders, dit
-<span class="sc">oog</span> of eiland in eigendom hebbende, in de
-bekende binnenlandsche verdeeldheden tusschen de zoogenaamde
-<span class="ex">Schieringers</span> (<i>behoeftigen</i>) en
-<span class="ex">Vetkoopers</span> (<i>gegoeden</i>) welligt betrokken
-zijn geweest, of daaraan deel hebben genomen en der <span class=
+<p>Oudtijds werd het eiland <span class="ex">Monnikoog</span> genoemd,
+waarschijnlijk eene afleiding of verbastering van het Latijnsche
+<i>Monicoga</i>, waarbij later het woorde <i>Schier</i> of
+<i>Scheer</i> gevoegd is, omtrent welks beteekenis verschillende
+meeningen bestaan. Volgens sommigen komt het woordje <i>Schier</i> af
+van de <i>Schiere</i>, d. i. grijze of graauwe mantels en kappen, welke
+de kloosterlingen zouden gedragen hebben. Is dit gevoelen, waarmede wij
+geheel instemmen, waar, dan volgt daaruit ook, dat er veel
+waarschijnlijkheid bestaat voor de meening, dat op het eiland zelve, en
+dus niet daar buiten, een klooster gestaan hebbe.&mdash;</p>
+<p>Anderen nemen aan, dat de kloosterbroeders, dit <span class=
+"sc">oog</span> of eiland in eigendom hebbende, in de bekende
+binnenlandsche verdeeldheden tusschen de zoogenaamde <span class=
+"ex">Schieringers</span> (<i>behoeftigen</i>) en <span class=
+"ex">Vetkoopers</span> (<i>gegoeden</i>) welligt betrokken zijn
+geweest, of daaraan deel hebben genomen en der <span class=
 "ex">Schieringer</span>-partij waren toegedaan. <span class=
 "pagenum">[<a id="pb8" href="#pb8" name="pb8">8</a>]</span></p>
-<p class="par">Van daar zouden zij dan den naam van <span class=
+<p>Van daar zouden zij dan den naam van <span class=
 "ex">Schieringer-Monniken</span>, en bij verkorting, dien van
 <span class="ex">Schiermonniken</span> erlangd hebben.&mdash;Wat
 hiervan zij, zoo veel is, blijkens een oud handschrift zeker, dat die
 van <span class="ex">Monnik-oog</span>, zoo als het daarin heet, tot de
 partij der <span class="ex">Schieringers</span> behoord
 hebben.&mdash;</p>
-<p class="par">Althans, genoemd handschrift gewaagt van een verdrag of
+<p>Althans, genoemd handschrift gewaagt van een verdrag of
 overeenkomst, dat op zekeren tijd stond gesloten te worden tusschen de
 <i>Schieringers</i> en <i>Vetkoopers</i>, en dat onder de
 afgevaardigden of gecommitteerden van beide partijen, van de zijde der
@@ -889,65 +968,64 @@ Schieringers ook verschenen die van <span class="ex">Monnik-oog</span>
 en <span class="ex">Rottumer-oog</span>; die bij dit verdrag, aan de
 Vetkoopers, de vrije en onbelemmerde visscherij op hunne kusten
 toestonden.&mdash;</p>
-<p class="par">De vlakke inhoud van dit eiland, die thans ongeveer 1088
-bunders bedraagt, waarvan ruim 1079 bunders belastbaar land, was
-vroeger veel uitgestrekter. De gestadige afbrokkeling, veroorzaakt door
-de vreesselijke stormvloeden, welke in den loop der eeuwen ook dit
+<p>De vlakke inhoud van dit eiland, die thans ongeveer 1088 bunders
+bedraagt, waarvan ruim 1079 bunders belastbaar land, was vroeger veel
+uitgestrekter. De gestadige afbrokkeling, veroorzaakt door de
+vreesselijke stormvloeden, welke in den loop der eeuwen ook dit
 gedeelte van den vaderlandschen bodem teisterden, hebben een
 aanmerkelijk gedeelte van het eiland ingekort en aan de zee
 prijsgegeven.</p>
-<p class="par">Het waren inzonderheid de verwoestende stormvloeden van
-<span class="corr" id="xd21e387" title=
-"Bron: Kersnacht">Kerstnacht</span> 1717, en van den 1<sup>e</sup>
-Januarij des jaars 1720, waardoor <span class=
+<p>Het waren inzonderheid de verwoestende stormvloeden van <span class=
+"corr" id="xd27e381" title="Bron: Kersnacht">Kerstnacht</span> 1717, en
+van den 1<sup>e</sup> Januarij des jaars 1720, waardoor <span class=
 "sc">Schiermonnikoog</span> zeer veel had te lijden.&mdash;De
 natuurlijke schutsmuur, tegen de woede der zee, de duinen, werden ten
 deele weggeslagen of verstoven, en de bewoners genoodzaakt, hunne
 woningen af te breken en die zoo veel mogelijk oostwaarts weder op te
 bouwen.</p>
-<p class="par">Zoo bestond er in vroegere jaren aan de zuidzijde des
-eilands ook eene haven, de <span class="ex">Wiel</span> genaamd, die
-vooral des winters, aan de schepen tot eene veilige ligplaats diende,
-doch ook deze is thans door de zee geheel verzwolgen.</p>
-<p class="par">De duinen bezitten geen eigen namen, behalve eene, die
-<span class="pagenum">[<a id="pb9" href="#pb9" name=
-"pb9">9</a>]</span>algemeen bekend staat, als <span class="ex">de Witte
-Duin</span>, en dezen naam draagt naar de helm, waarmede zij is
-beplant. Tusschen de duinen heeft men drie tamelijk uitgestrekte
-valeijen, <span class="ex">gloppen</span> genaamd, als 1<sup>e</sup>
-het <span class="ex">Kaperglop</span>, (waar vroeger eene kaap of
-verkenningsteeken stond<a class="noteref" id="xd21e421src" href=
-"#xd21e421" name="xd21e421src">1</a>;)&mdash;2<sup>e</sup> <span class=
+<p>Zoo bestond er in vroegere jaren aan de zuidzijde des eilands ook
+eene haven, de <span class="ex">Wiel</span> genaamd, die vooral des
+winters, aan de schepen tot eene veilige ligplaats diende, doch ook
+deze is thans door de zee geheel verzwolgen.</p>
+<p>De duinen bezitten geen eigen namen, behalve eene, die <span class=
+"pagenum">[<a id="pb9" href="#pb9" name="pb9">9</a>]</span>algemeen
+bekend staat, als <span class="ex">de Witte Duin</span>, en dezen naam
+draagt naar de helm, waarmede zij is beplant. Tusschen de duinen heeft
+men drie tamelijk uitgestrekte valeijen, <span class=
+"ex">gloppen</span> genaamd, als 1<sup>e</sup> het <span class=
+"ex">Kaperglop</span>, (waar vroeger eene kaap of verkenningsteeken
+stond<a class="noteref" id="xd27e415src" href="#xd27e415" name=
+"xd27e415src">1</a>;)&mdash;2<sup>e</sup> <span class=
 "ex">Zeeduinen</span>, en 3<sup>e</sup> het <span class=
 "ex">Zeeglop</span>, terwijl buiten de duinen nog het <i>Groene
 Glop</i> gevonden wordt. Voorts is er eene uitwatering aan de
 zuid-oostzijde des eilands, het <span class="ex">Nieuwlands-riet</span>
 genaamd.&mdash;</p>
-<p class="par">Ook het lot dat der voormalige buurtschappen op dit
-eiland ten deele is gevallen, bewijst mede de verandering, welke de
-natuurlijke toestand van <span class="sc">Schiermonnikoog</span> heeft
-ondergaan. Vroeger namelijk, bestonden hier 4 buurtschappen,
-<span class="ex">Ooster</span>- en <span class="ex">Westerburen</span>,
+<p>Ook het lot dat der voormalige buurtschappen op dit eiland ten deele
+is gevallen, bewijst mede de verandering, welke de natuurlijke toestand
+van <span class="sc">Schiermonnikoog</span> heeft ondergaan. Vroeger
+namelijk, bestonden hier 4 buurtschappen, <span class=
+"ex">Ooster</span>- en <span class="ex">Westerburen</span>,
 <span class="ex">Binnendijken</span> en <span class="ex">Dompen</span>.
 Deze laatste buurt, welke voorheen tot <span class=
 "ex">Westerburen</span> behoorde, is omstreeks het midden der
 18<sup>e</sup> eeuw ten gevolge van overstrooming en afkabbeling
 vernietigd, welk lot ook later ten deele aan <span class=
 "ex">Oosterburen</span> was beschoren.&mdash;</p>
-<p class="par">Een eigenlijk geregeld dorp of vlek, bestond er
-v&oacute;&oacute;r 1720 niet. De buurten telden te zamen een 160-tal
-woningen, die nagenoeg zonder regel verspreid lagen.&mdash;Tegenwoordig
-bevat Schiermonnikoog een vijftal buurten, die &eacute;&eacute;ne
-gemeente uitmaken, n. l. de <span class="ex">Voorste Streek</span>, de
+<p>Een eigenlijk geregeld dorp of vlek, bestond er v&oacute;&oacute;r
+1720 niet. De buurten telden te zamen een 160-tal woningen, die
+nagenoeg zonder regel verspreid lagen.&mdash;Tegenwoordig bevat
+Schiermonnikoog een vijftal buurten, die &eacute;&eacute;ne gemeente
+uitmaken, n. l. de <span class="ex">Voorste Streek</span>, de
 <span class="ex">Lange Streek</span>, de <span class=
 "ex">Middenstreek</span>, <span class="ex">Vierhuizen</span> en
 <span class="ex">Zevenhuizen</span>, benevens een paar meer afgelegen
 boerenplaatsen, te zamen bevattende p. m. 900 inwoners.</p>
-<p class="par">Door de hierboven genoemde verplaatsing oostwaarts heen,
-erlangde <span class="ex">Oosterburen</span> eene merkelijke
-uitbreiding, en werd langzamerhand een regelmatig aangelegd dorp, dat
-voornamelijk uit twee rijen huizen bestaat, die van elkander
-<span class="pagenum">[<a id="pb10" href="#pb10" name=
+<p>Door de hierboven genoemde verplaatsing oostwaarts heen, erlangde
+<span class="ex">Oosterburen</span> eene merkelijke uitbreiding, en
+werd langzamerhand een regelmatig aangelegd dorp, dat voornamelijk uit
+twee rijen huizen bestaat, die van elkander <span class=
+"pagenum">[<a id="pb10" href="#pb10" name=
 "pb10">10</a>]</span>onderscheiden worden door de benamingen van
 &bdquo;de <span class="ex">Oosterstraat</span> of <span class=
 "ex">Voorstreek</span> en de <span class="ex">Westerstraat</span> of
@@ -955,23 +1033,23 @@ voornamelijk uit twee rijen huizen bestaat, die van elkander
 en het meest bevolkt is, terwijl de andere, als bevattende de
 voornaamste huizingen, zoo als van den geneesheer, ontvanger enz., het
 aanzienlijkste voorkomen heeft.</p>
-<p class="par">Beide hoofdstraten strekken zich van het westen,
-oostwaarts uit, en zijn niet geplaveid.&mdash;</p>
-<p class="par">De tegenwoordige kerk, welker stichting van 1762
-dagteekent, is in het midden dier straat, op een ruim plein dat tot
-algemeene begraafplaats dient, gebouwd. Het is een langwerpig vierkant
-gebouw, dat zeer net betimmerd is en dat, bij eene breedte van 25, eene
-lengte van 60 voeten heeft. Op het midden der kap is eenen zeskanten
-groen geverwden toren, waarin een&rsquo; klok hangt, die, naar men
-zegt, afkomstig is van een Engelsch schip, dat op de kusten van dit
-eiland strandde.</p>
-<p class="par">Aan de oostzijde bezit dit bedehuis twee, aan den
-noordkant vier, en aan de zuidzijde vijf ramen. Van de twee over
-elkander gelegene ingangen is die aan de westzijde de hoofdingang met
-een portaal. Het inwendige der kerk, welke een verwulf heeft, is
-versierd met eenige fraaije wapenborden van de adellijke familie der
-<span class="sc">Stachouwers</span>, terwijl een verheven zitbank,
-waaronder een grafkelder, <span class="corr" id="xd21e519" title=
+<p>Beide hoofdstraten strekken zich van het westen, oostwaarts uit, en
+zijn niet geplaveid.&mdash;</p>
+<p>De tegenwoordige kerk, welker stichting van 1762 dagteekent, is in
+het midden dier straat, op een ruim plein dat tot algemeene
+begraafplaats dient, gebouwd. Het is een langwerpig vierkant gebouw,
+dat zeer net betimmerd is en dat, bij eene breedte van 25, eene lengte
+van 60 voeten heeft. Op het midden der kap is eenen zeskanten groen
+geverwden toren, waarin een&rsquo; klok hangt, die, naar men zegt,
+afkomstig is van een Engelsch schip, dat op de kusten van dit eiland
+strandde.</p>
+<p>Aan de oostzijde bezit dit bedehuis twee, aan den noordkant vier, en
+aan de zuidzijde vijf ramen. Van de twee over elkander gelegene
+ingangen is die aan de westzijde de hoofdingang met een portaal. Het
+inwendige der kerk, welke een verwulf heeft, is versierd met eenige
+fraaije wapenborden van de adellijke familie der <span class=
+"sc">Stachouwers</span>, terwijl een verheven zitbank, waaronder een
+grafkelder, <span class="corr" id="xd27e513" title=
 "Bron: de eigendommen zijn">het eigendom is</span> van de vroegere
 bezitters of heeren van dit eiland, dat ten jare 1638 tot eene
 <span class="ex">Vrije Heerlijkheid</span> werd verheven, en door de
@@ -989,65 +1067,64 @@ Anna</span> en <span class="ex">Isselietes</span>, wiens nazaat,
 Wehe, Lid van de Ridderschap der provincie Groningen</span>, verblijf
 houdende te Maarssen, provincie Utrecht, de tegenwoordige eigenaar
 is.</p>
-<p class="par">De waarde dezer Heerlijkheid was in den tijd van bijna
-anderhalve eeuw, door ontwikkeling van de vruchtbaarheid des bodems,
-dermate gerezen, dat dezelve ten jare 1761, bij eene boedelscheiding,
-op eene innerlijke waarde van ongeveer 89,000 guldens werd
-geschat.&mdash;</p>
-<p class="par">Aangaande deze heerlijkheid vonden wij in een oud
-gedrukt stuk veel wetenswaardigs betrekkelijk het &bdquo;<i lang=
-"nl">Eygen gekogte Regt van Civile en Criminele Justitie</i>&rdquo;
-over dezelve.<a class="noteref" id="xd21e559src" href="#xd21e559" name=
-"xd21e559src">2</a></p>
-<p class="par">Het vorig kerkgebouw, met steenen toren en pannen dak,
-werd gesticht omstreeks 1600, doch in 1715, ten gevolge van aanhoudende
+<p>De waarde dezer Heerlijkheid was in den tijd van bijna anderhalve
+eeuw, door ontwikkeling van de vruchtbaarheid des bodems, dermate
+gerezen, dat dezelve ten jare 1761, bij eene boedelscheiding, op eene
+innerlijke waarde van ongeveer 89,000 guldens werd geschat.&mdash;</p>
+<p>Aangaande deze heerlijkheid vonden wij in een oud gedrukt stuk veel
+wetenswaardigs betrekkelijk het &bdquo;<i lang="nl">Eygen gekogte Regt
+van Civile en Criminele Justitie</i>&rdquo; over dezelve.<a class=
+"noteref" id="xd27e553src" href="#xd27e553" name=
+"xd27e553src">2</a></p>
+<p>Het vorig kerkgebouw, met steenen toren en pannen dak, werd gesticht
+omstreeks 1600, doch in 1715, ten gevolge van aanhoudende
 zandstuivingen der duinen, gesloopt en vervangen door eene andere,
 waarvan men slechts ruim veertig jaren genot mogt hebben, naardien zij
 in 1760 door de zee werd verwoest.</p>
-<p class="par">Dan, niet alleen dat de veranderingen, welke er in den
-loop der eeuwen op <span class="sc">Schiermonnikoog</span> hebben
-plaats gegrepen, blijken uit den bouw der drie kerken, in een
-betrekkelijk kort tijdsbestek; maar er is meer dat van die verandering
-getuigt. Zoo ontwaarde men omstreeks 1735, dat het buitenstrand aan de
-Z.-West zijde, door het verloopen der zeegaten en stroomen, op
-verontrustende wijze afnam. Deze afspoeling nam zoo zeer toe, dat men
-omtrent 20 jaren later, het aan de zee prijs geworden gedeelte lands,
-op meer dan een uur gaans konde begrooten, terwijl het volgens latere
-waarnemingen, van 1814 tot en met het noodlottige jaar 1825 gedaan,
-bleek, dat <span class="sc">Schiermonnikoog</span> aan de zuid- en
-zuidwestelijke zijde, zoo zeer was ingekort, dat het in de breedte
-verloren gedeelte lands eene uitgestrektheid had gehad, bijna
-<span class="pagenum">[<a id="pb12" href="#pb12" name=
-"pb12">12</a>]</span>gelijk aan die van het land, dat toen nog van den
-zeekant tot aan de duinen op het breedste gedeelte des eilands aanwezig
-was. Geen wonder dus, dat de inwoners met reden bevreesd waren voor het
-toekomstige lot van hun eiland, aangezien het te vermoeden was, dat,
-ingeval de loop des strooms door het verbreken of aanslibben der
-voorliggende gronden, geenen anderen weg werd aangewezen, de vaste
-bodem des eilands, binnen korten tijd, afgespoeld zoude zijn, tot zelfs
-daar waar het dorp was gebouwd. En nog te meer werden zij in hunne
-vrees bevestigd, naardien de duinen reeds op onderscheidene plaatsen
-waren ge&iuml;nundeerd, en de Noordzee, ter plaatse waar deze
-natuurlijke zeeweringen ontbraken, met vollen golfslag op het vlakke
-gedeelte des eilands aankwam, terwijl het land d&aacute;&aacute;r, waar
-dit niet plaats had, door aanhoudende overstuiving der zandduinen
-bedorven geraakte.&mdash;Zoo als wij boven reeds aanmerkten, hadden er
-van tijd tot tijd verhuizingen plaats gehad, ter oorzake waarvan de
-voormalige buurtschappen waren verdwenen. Dan ook dit middel, om den
-gevreesden vijand, het water, althans tijdelijk te ontkomen, baatte
-niet meer, aangezien de watervloed van Februarij 1825 had doen zien,
-dat de woningen reeds op het hoogste gedeelte des eilands stonden,
-zoodat het vooruitzigt der bewoners, bij eene aldus voortgaande
-afneming, waardoor het te voorzien was, dat het eiland eindelijk in
-eene kale zandbank zoude verkeeren, allezins bang was.&mdash;</p>
-<p class="par">Bovendien was het in het voormelde jaar, 1825, gebleken,
-dat de kunstmatige<a class="noteref" id="xd21e577src" href="#xd21e577"
-name="xd21e577src">3</a> zeeweringen, geene genoegzame sterkte bezaten,
-om, in tijd van nood, den aandrang des zeewaters te keeren. Zoo was het
-op den avond van den 5<sup>den</sup> Februarij <span class=
+<p>Dan, niet alleen dat de veranderingen, welke er in den loop der
+eeuwen op <span class="sc">Schiermonnikoog</span> hebben plaats
+gegrepen, blijken uit den bouw der drie kerken, in een betrekkelijk
+kort tijdsbestek; maar er is meer dat van die verandering getuigt. Zoo
+ontwaarde men omstreeks 1735, dat het buitenstrand aan de Z.-West
+zijde, door het verloopen der zeegaten en stroomen, op verontrustende
+wijze afnam. Deze afspoeling nam zoo zeer toe, dat men omtrent 20 jaren
+later, het aan de zee prijs geworden gedeelte lands, op meer dan een
+uur gaans konde begrooten, terwijl het volgens latere waarnemingen, van
+1814 tot en met het noodlottige jaar 1825 gedaan, bleek, dat
+<span class="sc">Schiermonnikoog</span> aan de zuid- en zuidwestelijke
+zijde, zoo zeer was ingekort, dat het in de breedte verloren gedeelte
+lands eene uitgestrektheid had gehad, bijna <span class=
+"pagenum">[<a id="pb12" href="#pb12" name="pb12">12</a>]</span>gelijk
+aan die van het land, dat toen nog van den zeekant tot aan de duinen op
+het breedste gedeelte des eilands aanwezig was. Geen wonder dus, dat de
+inwoners met reden bevreesd waren voor het toekomstige lot van hun
+eiland, aangezien het te vermoeden was, dat, ingeval de loop des
+strooms door het verbreken of aanslibben der voorliggende gronden,
+geenen anderen weg werd aangewezen, de vaste bodem des eilands, binnen
+korten tijd, afgespoeld zoude zijn, tot zelfs daar waar het dorp was
+gebouwd. En nog te meer werden zij in hunne vrees bevestigd, naardien
+de duinen reeds op onderscheidene plaatsen waren ge&iuml;nundeerd, en
+de Noordzee, ter plaatse waar deze natuurlijke zeeweringen ontbraken,
+met vollen golfslag op het vlakke gedeelte des eilands aankwam, terwijl
+het land d&aacute;&aacute;r, waar dit niet plaats had, door aanhoudende
+overstuiving der zandduinen bedorven geraakte.&mdash;Zoo als wij boven
+reeds aanmerkten, hadden er van tijd tot tijd verhuizingen plaats
+gehad, ter oorzake waarvan de voormalige buurtschappen waren verdwenen.
+Dan ook dit middel, om den gevreesden vijand, het water, althans
+tijdelijk te ontkomen, baatte niet meer, aangezien de watervloed van
+Februarij 1825 had doen zien, dat de woningen reeds op het hoogste
+gedeelte des eilands stonden, zoodat het vooruitzigt der bewoners, bij
+eene aldus voortgaande afneming, waardoor het te voorzien was, dat het
+eiland eindelijk in eene kale zandbank zoude verkeeren, allezins bang
+was.&mdash;</p>
+<p>Bovendien was het in het voormelde jaar, 1825, gebleken, dat de
+kunstmatige<a class="noteref" id="xd27e571src" href="#xd27e571" name=
+"xd27e571src">3</a> zeeweringen, geene genoegzame sterkte bezaten, om,
+in tijd van nood, den aandrang des zeewaters te keeren. Zoo was het op
+den avond van den 5<sup>den</sup> Februarij <span class=
 "pagenum">[<a id="pb13" href="#pb13" name="pb13">13</a>]</span>v.m.j.
 dat het zeewater met zulk eene snelheid rees, dat het ongeveer ten
-zeven uren bijna 1/4 Ned. el hooger stond dan bij den hoogsten
+zeven uren bijna &frac14; Ned. el hooger stond dan bij den hoogsten
 waterstand van den vloed in November 1824.&mdash;Het opkomend
 vloedwater stortte met geweld over den zeedijk heen, en naderde,
 voortgestuwd door den hevigen wind, met eenen geweldigen aandrang het
@@ -1061,24 +1138,24 @@ weggeslagen werden, eenen doortogt, verwoestte geheel of ten deele
 verscheidene landbouwershoeven, schuren en andere zaken, hooi, graan en
 andere levensbehoeften, en bedekte de landerijen geheel onder het van
 de duinen losgescheurde en afgestoken land.&mdash;</p>
-<p class="par">Geen wonder dus, dat deze eilanders, na zulke voorvallen
-en onder zulke omstandigheden, zich de toekomst van hun eiland als
-hoogst treurig voorstelden.&mdash;Dan, de goede Voorzienigheid waakte
-ook over <span class="sc">Schiermonnikoog</span>. De vrees van deszelfs
-bewoners is merkelijk verminderd, of w&egrave;l geheel weggenomen,
-dewijl aan het westeinde des eilands, in eene zuidwaartsche rigting,
-eene plaat of bank is verrezen, die zich in eene vrij groote
-uitgestrektheid naar <span class="ex">Peazens</span> rigt. Het is
-voorzeker opmerkelijk, dat deze plaat of zandbank, welke zich aldaar
-zonder eenige kunstmatige tegemoetkoming gevormd heeft, en die onder
-den naam van <span class="ex">den Noorman</span>, zeer verre in het
-Friesche Gat uitloopt, hier als het ware tot een bolwerk is opgeworpen,
-die de verkleining van Schiermonnikoog, door aanhoudende afkabbeling
-der zee, door het vernietigen van den stroomloop, voorkomt.&mdash;</p>
-<p class="par">Onder de meldingswaardige bijzonderheden, welke er
-vroeger <span class="pagenum">[<a id="pb14" href="#pb14" name=
-"pb14">14</a>]</span>op <span class="sc"><a id="xd21e601" name=
-"xd21e601"></a>Schiermonnikoog</span> gevonden werden, behoort vooral
+<p>Geen wonder dus, dat deze eilanders, na zulke voorvallen en onder
+zulke omstandigheden, zich de toekomst van hun eiland als hoogst
+treurig voorstelden.&mdash;Dan, de goede Voorzienigheid waakte ook over
+<span class="sc">Schiermonnikoog</span>. De vrees van deszelfs bewoners
+is merkelijk verminderd, of w&egrave;l geheel weggenomen, dewijl aan
+het westeinde des eilands, in eene zuidwaartsche rigting, eene plaat of
+bank is verrezen, die zich in eene vrij groote uitgestrektheid naar
+<span class="ex">Peazens</span> rigt. Het is voorzeker opmerkelijk, dat
+deze plaat of zandbank, welke zich aldaar zonder eenige kunstmatige
+tegemoetkoming gevormd heeft, en die onder den naam van <span class=
+"ex">den Noorman</span>, zeer verre in het Friesche Gat uitloopt, hier
+als het ware tot een bolwerk is opgeworpen, die de verkleining van
+Schiermonnikoog, door aanhoudende afkabbeling der zee, door het
+vernietigen van den stroomloop, voorkomt.&mdash;</p>
+<p>Onder de meldingswaardige bijzonderheden, welke er vroeger
+<span class="pagenum">[<a id="pb14" href="#pb14" name=
+"pb14">14</a>]</span>op <span class="sc"><a id="xd27e595" name=
+"xd27e595"></a>Schiermonnikoog</span> gevonden werden, behoort vooral
 genoemd te worden het te <span class="ex">Binnendijken</span> gestaan
 hebbende Stamhuis der Heeren en Vrouwen van de Heerlijkheid
 <span class="ex">Schiermonnikoog</span>, <i>het Huis Binnendijken</i>.
@@ -1091,32 +1168,32 @@ de adellijke familie der <span class="sc">Stachouwers</span> daarna
 gedurende langen tijd verblijf gehouden heeft, op de buitenplaats
 <i>Patmos</i>, die meer westwaarts stond, en waarop de vorige Grietman
 van <span class="sc">Schiermonnikoog</span> woonde.</p>
-<p class="par">Behalve de genoemde bijzondere Heerenhuizingen was er
-vroeger nog eene andere buitenplaats, <i>Duinenburg</i> geheeten, die
-omgeven was met grachten, bosschen, boomgaard en tuinen. Deze plaats
-heeft echter vele en groote veranderingen ondergaan, en dient heden tot
-pastorie van den predikant, die hier het leeraarambt bekleedt over de
-900 inwoners, die allen der Hervormde Godsdienst zijn toegedaan, en
-waaronder circa 300 ledematen zijn, die eene gemeente uitmaken, welke
-tot de klassis van <span class="ex">Dockum</span>, Ring van
-<span class="ex">Holwerd</span>, behoort.</p>
-<p class="par">Sedert twee eeuwen geleden was de gemeente van
-Schiermonnikoog gecombineerd met die van <span class="ex">Nes</span>,
-in Friesland. De predikant van laatstgemelde plaats, ging op bepaalde
-tijden derwaarts prediken, hetgeen duurde tot aan het jaar 1617. Van
-toen af tot aan 1640 vervulde de predikant van <span class=
-"ex">Paezens</span>, zijnde <span class="sc">Cornelis Pophh</span>, de
-dienst op het eiland. Deze ijverige leeraar kwam op eene zijner
-terugreizen van het eiland, door slecht weder, ellendig om het
-leven.&mdash;Gedurende de daarop volgende vier jaren, dus tot 1644,
-bleef Schiermonnikoog vacant, doch bekwam toen zijnen eersten
-eigen&rsquo; herder en leeraar in <span class="sc">Cornelis
-Pieters</span>, die, na slechts <span class="pagenum">[<a id="pb15"
-href="#pb15" name="pb15">15</a>]</span>vijf jaren zijn ambt met trouw
-en ijver waargenomen te hebben, aldaar overleed.&mdash;</p>
-<p class="par">Het beroep, dat vroeger eene Heerlijke Collatie was, is
-sedert eenige jaren eene Koninklijke geworden.</p>
-<p class="par">Behalve een gebouw van de Noord- en Zuid-Hollandsche
+<p>Behalve de genoemde bijzondere Heerenhuizingen was er vroeger nog
+eene andere buitenplaats, <i>Duinenburg</i> geheeten, die omgeven was
+met grachten, bosschen, boomgaard en tuinen. Deze plaats heeft echter
+vele en groote veranderingen ondergaan, en dient heden tot pastorie van
+den predikant, die hier het leeraarambt bekleedt over de 900 inwoners,
+die allen der Hervormde Godsdienst zijn toegedaan, en waaronder circa
+300 ledematen zijn, die eene gemeente uitmaken, welke tot de klassis
+van <span class="ex">Dockum</span>, Ring van <span class=
+"ex">Holwerd</span>, behoort.</p>
+<p>Sedert twee eeuwen geleden was de gemeente van Schiermonnikoog
+gecombineerd met die van <span class="ex">Nes</span>, in Friesland. De
+predikant van laatstgemelde plaats, ging op bepaalde tijden derwaarts
+prediken, hetgeen duurde tot aan het jaar 1617. Van toen af tot aan
+1640 vervulde de predikant van <span class="ex">Paezens</span>, zijnde
+<span class="sc">Cornelis Pophh</span>, de dienst op het eiland. Deze
+ijverige leeraar kwam op eene zijner terugreizen van het eiland, door
+slecht weder, ellendig om het leven.&mdash;Gedurende de daarop volgende
+vier jaren, dus tot 1644, bleef Schiermonnikoog vacant, doch bekwam
+toen zijnen eersten eigen&rsquo; herder en leeraar in <span class=
+"sc">Cornelis Pieters</span>, die, na slechts <span class=
+"pagenum">[<a id="pb15" href="#pb15" name="pb15">15</a>]</span>vijf
+jaren zijn ambt met trouw en ijver waargenomen te hebben, aldaar
+overleed.&mdash;</p>
+<p>Het beroep, dat vroeger eene Heerlijke Collatie was, is sedert
+eenige jaren eene Koninklijke geworden.</p>
+<p>Behalve een gebouw van de Noord- en Zuid-Hollandsche
 Reddingmaatschappij dat in de nabijheid der kerk staat, en waarin eene
 zeer doelmatig ingerigte reddingboot met toebehooren bewaard wordt,
 verdient ook de inrigting van liefdadigheid genoemd te worden.&mdash;Al
@@ -1133,45 +1210,45 @@ onderstand erlangende, in staat zijn om te arbeiden, moeten zich
 dagelijks naar dit werkhuis begeven, om behulpzaam te zijn in het
 spinnen van garen, dat van hennip wordt gemaakt en bestemd is voor de
 rolreederij.</p>
-<p class="par">De openbare school, waarin ook onderwijs gegeven wordt
-in de zeevaartkunde, en waarvan, vooral des winters, door vele jonge
+<p>De openbare school, waarin ook onderwijs gegeven wordt in de
+zeevaartkunde, en waarvan, vooral des winters, door vele jonge
 varensgezellen gebruik wordt gemaakt, telt gemiddeld ruim 100
 kinderen.</p>
-<p class="par">Als eene bijzonderheid merken wij mede aan, dat de
-meeste huizen, die van gele mopsteen zijn opgebouwd, begroeid zijn met
-eiloof of klimop.</p>
-<p class="par">De inwoners erlangen voor het meerendeel hun bestaan in
-de scheepvaart, en ofschoon zich sedert 1825 vele famili&euml;n,
-elders, inzonderheid in of in de nabijheid van Amsterdam <span class=
+<p>Als eene bijzonderheid merken wij mede aan, dat de meeste huizen,
+die van gele mopsteen zijn opgebouwd, begroeid zijn met eiloof of
+klimop.</p>
+<p>De inwoners erlangen voor het meerendeel hun bestaan in de
+scheepvaart, en ofschoon zich sedert 1825 vele famili&euml;n, elders,
+inzonderheid in of in de nabijheid van Amsterdam <span class=
 "pagenum">[<a id="pb16" href="#pb16" name="pb16">16</a>]</span>hebben
 gevestigd, zijn er nog een groot aantal koopvaardijkapiteins,
 stuurlieden enz., met hunne huisgezinnen.</p>
-<p class="par">Vroeger bezaten de Schiermonnikoogers eene belangrijke
-hoeveelheid schepen, wier getal zelfs tot meer dan honderd beliep, en
-die allen, voor eigen rekening dezer eilanders, in de vaart gebragt
-werden. Men noemde deze vaartuigen <i>Snikken</i>, en het meerendeel
-daarvan werd gebezigd tot uitoefening der vischvangst op de Noordzee.
-Destijds was dit eiland inzonderheid vermaard door de gedroogde schol,
-welke van daar allerwege verzonden werd, en die nog heden ten dage,
-aldaar het best behandeld wordt.</p>
-<p class="par">Deze visch ontweek echter later meer onze kusten, zoodat
-de vangst verminderde en de Schiermonnikooger visschers genoodzaakt
-waren, om, verstoken van deze broodwinning, zich van hunne snikken te
-ontdoen en van schepen te voorzien, geschikt om ter koopvaart te worden
-gebezigd. Van toen af lagen zij zich meer bepaald op de zeevaart toe,
-en begaven zij zich naar de kusten van Holstein en andere plaatsen, en
-sedert de tweede helft der zeventiende eeuw ook naar de Oostzee, en de
-Fransche en Engelsche havens, werwaarts zij, van uit onze vaderlandsche
-havens, allerlei koopwaren en stukgoederen vervoerden, en van waar zij
-die ook herwaarts overbragten,&mdash;terwijl sommige hunner,
-inzonderheid na de meer algemeene uitbreiding van onzen koophandel,
-zich op de groote vaart toeleiden, zoo dat men heden ten dage, onder de
-Oost- en West-Indische scheepsgezagvoerders vele Schiermonnikoogers
-aantreft.<a class="noteref" id="xd21e678src" href="#xd21e678" name=
-"xd21e678src">4</a>&mdash;</p>
-<p class="par">Een ander gedeelte der bevolking legt zich op den
-landbouw toe, vooral sints de landerijen, door de bemoeijingen van den
-Heer des eilands, die zorg droeg voor een doelmatige <span class=
+<p>Vroeger bezaten de Schiermonnikoogers eene belangrijke hoeveelheid
+schepen, wier getal zelfs tot meer dan honderd beliep, en die allen,
+voor eigen rekening dezer eilanders, in de vaart gebragt werden. Men
+noemde deze vaartuigen <i>Snikken</i>, en het meerendeel daarvan werd
+gebezigd tot uitoefening der vischvangst op de Noordzee. Destijds was
+dit eiland inzonderheid vermaard door de gedroogde schol, welke van
+daar allerwege verzonden werd, en die nog heden ten dage, aldaar het
+best behandeld wordt.</p>
+<p>Deze visch ontweek echter later meer onze kusten, zoodat de vangst
+verminderde en de Schiermonnikooger visschers genoodzaakt waren, om,
+verstoken van deze broodwinning, zich van hunne snikken te ontdoen en
+van schepen te voorzien, geschikt om ter koopvaart te worden gebezigd.
+Van toen af lagen zij zich meer bepaald op de zeevaart toe, en begaven
+zij zich naar de kusten van Holstein en andere plaatsen, en sedert de
+tweede helft der zeventiende eeuw ook naar de Oostzee, en de Fransche
+en Engelsche havens, werwaarts zij, van uit onze vaderlandsche havens,
+allerlei koopwaren en stukgoederen vervoerden, en van waar zij die ook
+herwaarts overbragten,&mdash;terwijl sommige hunner, inzonderheid na de
+meer algemeene uitbreiding van onzen koophandel, zich op de groote
+vaart toeleiden, zoo dat men heden ten dage, onder de Oost- en
+West-Indische scheepsgezagvoerders vele Schiermonnikoogers
+aantreft.<a class="noteref" id="xd27e672src" href="#xd27e672" name=
+"xd27e672src">4</a>&mdash;</p>
+<p>Een ander gedeelte der bevolking legt zich op den landbouw toe,
+vooral sints de landerijen, door de bemoeijingen van den Heer des
+eilands, die zorg droeg voor een doelmatige <span class=
 "pagenum">[<a id="pb17" href="#pb17" name=
 "pb17">17</a>]</span>bemesting, eene vruchtbaarheid hebben ontwikkeld,
 welke veel verschilt met hunnen voormaligen toestand. Groeiden toen
@@ -1182,14 +1259,14 @@ voedingsmiddel, waarvan eene kleine hoeveelheid wordt uitgevoerd.
 Landbouw en veeteelt worden overigens uitgeoefend alleen ter
 voorziening in de dagelijksche behoeften der eilanders. De veestapel
 bestaat uit 22 paarden, 160 runderen en 100 schapen.</p>
-<p class="par">De invoer bestaat in brandstoffen, manufacturen,
-koloniale producten, granen en andere noodwendigheden, en heeft plaats
-uit Amsterdam en uit de provinci&euml;n Friesland en Groningen, waartoe
+<p>De invoer bestaat in brandstoffen, manufacturen, koloniale
+producten, granen en andere noodwendigheden, en heeft plaats uit
+Amsterdam en uit de provinci&euml;n Friesland en Groningen, waartoe
 meestal de op dit eiland te huis behoorende vaartuigen gebezigd
 worden.</p>
-<p class="par">Dat de oorlog een geessel der menschheid mag geheeten
-worden, werd ook tijdens de landing der Engelschen in Noord-Holland, op
-het einde der vorige eeuw, op <span class="sc">Schiermonnikoog</span>
+<p>Dat de oorlog een geessel der menschheid mag geheeten worden, werd
+ook tijdens de landing der Engelschen in Noord-Holland, op het einde
+der vorige eeuw, op <span class="sc">Schiermonnikoog</span>
 ondervonden.&mdash;Ook hier kwamen, behalve een paar gewapende kotters,
 een brik van 18 en eene korvet van 20 stukken, het Friesche Gat binnen,
 waarvoor nog twee vijandelijke fregatten ten anker lagen. Aldaar lag
@@ -1197,95 +1274,92 @@ eene Bataafsche brik gestationneerd, <i>the Crash</i> geheeten, welke
 onder het bevel van den luitenant ter zee <span class=
 "sc">Bijbel</span> Stond, en die achtervolgens slaags geraakte, eerst
 met de kotters, vervolgens met de brik en eindelijk met de korvet.</p>
-<p class="par">Intusschen nam de Bataafsche kanonneerboot <i>de
-Weerwraak</i> de vlugt, tot onder <span class=
-"sc">Schiermonnikoog</span>, en zag men op de brik, na eene manmoedige
-verdediging, de Bataafsche vlag strijken.&mdash;Hetzelfde lot
-<span class="corr" id="xd21e706" title="Bron: wachte">wachtte</span>
-ook <i>de Weerwraak</i>, waarop de luitenant ter zee <span class=
-"sc">Van Maaren</span> bevel voerde, en die zich weldra door eene brik,
-een kotter en negen gewapende barkassen zag
-aanvallen.&mdash;<span class="sc">Van maaren</span>, wel overtuigd,
+<p>Intusschen nam de Bataafsche kanonneerboot <i>de Weerwraak</i> de
+vlugt, tot onder <span class="sc">Schiermonnikoog</span>, en zag men op
+de brik, na eene manmoedige verdediging, de Bataafsche vlag
+strijken.&mdash;Hetzelfde lot <span class="corr" id="xd27e700" title=
+"Bron: wachte">wachtte</span> ook <i>de Weerwraak</i>, waarop de
+luitenant ter zee <span class="sc">Van Maaren</span> bevel voerde, en
+die zich weldra door eene brik, een kotter en negen gewapende barkassen
+zag aanvallen.&mdash;<span class="sc">Van maaren</span>, wel overtuigd,
 <span class="pagenum">[<a id="pb18" href="#pb18" name=
 "pb18">18</a>]</span>dat hij in dezen ongelijken strijd het onderspit
 zoude moeten delven, besloot, om den aan hem toevertrouwden bodem
 eerder in brand te steken, dan aan den vijand over te geven.</p>
-<p class="par">Nadat hij, een drietal zijner trouwste krijgsmakkers
-uitgenomen, de geheele bemanning der boot had weggezonden, wist hij
-het, al vechtende en schietende uit zijne boegstukken, zoo lang uit te
-houden, dat, toen de brik hem de volle laag gegeven had en de overige
-vijandelijke vaartuigen op zestig passen afstand hem genaderd waren, de
-vlam uit het voorluik der boot sloeg, op welk gezigt de barkassen zich
-haasteden, af te houden.&mdash;De boot verbrandde en viel den vijand
-dus niet in handen, terwijl de moedige <span class="sc">Van
-Maaren</span> en zijne drie gezellen, ofschoon bedreigd door eene
-hagelbui van geweerkogels, ongedeerd met de sloep aan land kwamen.</p>
-<p class="par">Den volgenden dag, zijnde den 15<sup>den</sup> Augustus,
-naderden eenige vijandelijke oorlogbodems op nieuw het eiland, welks
-verdediging was opgedragen aan den Luitenant <span class=
-"sc">Broers</span>, Die 26 manschappen onder zijn kommando en twee
-kleine veldstukjes ter zijner beschikking had. De vijand zond eenige
-gewapende sloepen en barkassen, zeer sterk bemand, naar land, die hier
-dan ook, onder bedekking van het geschut eener brik, die een hevig vuur
-op het strand onderhield, aan wal kwamen.&mdash;Dit vuur noodzaakte
-Luitenant <span class="sc">Broers</span>, om met zijne onderhebbende
-manschappen naar het dorp te wijken, hetgeen zij echter niet deden, dan
-na de beide veldstukjes vernageld te hebben, die later den Engelschen
-in handen vielen, door wien ook 9 tjalken werden prijs gemaakt en een
-verbrand, terwijl twee andere vaartuigen intusschen gelegenheid hadden
-gevonden, om den vijand te ontkomen.</p>
-<p class="par">Gedurende twee uren openden de Engelschen op de onzen
-een hevig vuur, doch vruchteloos;&mdash;de moed en de goed gekozen
-positie dezer laatsten was oorzaak, dat het dorp behouden bleef.
-<span class="pagenum">[<a id="pb19" href="#pb19" name=
-"pb19">19</a>]</span></p>
-<p class="par">Wij besluiten deze schets, met het volgende omtrent de
-bevolking aan te merken.</p>
-<p class="par">Over het geheel worden deze eilanders, waaronder er
-thans ook velen zijn, die ten gevolge van verminderde welvaart, in
-armoedige omstandigheden verkeeren, om hunne regtschapenheid, trouw en
-reine zeden, algemeen geacht.</p>
-<p class="par">Hunne huishouding is in den regel eenvoudig, terwijl
-hunne kleederdragt, ten opzigte waarvan vooral sommige vrouwen nog al
-pronk- en modeziek zijn, de gewone Friesche volksdragt is.</p>
-<p class="par">Hun verkeer met alle soorten van menschen,
-onafscheidelijk met het zeemansleven verbonden, maakt, dat zij ook voor
-het meerendeel in uitwendige beschaving niet ten achteren
-komen.&mdash;</p>
-<p class="par">Eene bijzondere gewoonte is hier de oprigting van eenen
+<p>Nadat hij, een drietal zijner trouwste krijgsmakkers uitgenomen, de
+geheele bemanning der boot had weggezonden, wist hij het, al vechtende
+en schietende uit zijne boegstukken, zoo lang uit te houden, dat, toen
+de brik hem de volle laag gegeven had en de overige vijandelijke
+vaartuigen op zestig passen afstand hem genaderd waren, de vlam uit het
+voorluik der boot sloeg, op welk gezigt de barkassen zich haasteden, af
+te houden.&mdash;De boot verbrandde en viel den vijand dus niet in
+handen, terwijl de moedige <span class="sc">Van Maaren</span> en zijne
+drie gezellen, ofschoon bedreigd door eene hagelbui van geweerkogels,
+ongedeerd met de sloep aan land kwamen.</p>
+<p>Den volgenden dag, zijnde den 15<sup>den</sup> Augustus, naderden
+eenige vijandelijke oorlogbodems op nieuw het eiland, welks verdediging
+was opgedragen aan den Luitenant <span class="sc">Broers</span>, Die 26
+manschappen onder zijn kommando en twee kleine veldstukjes ter zijner
+beschikking had. De vijand zond eenige gewapende sloepen en barkassen,
+zeer sterk bemand, naar land, die hier dan ook, onder bedekking van het
+geschut eener brik, die een hevig vuur op het strand onderhield, aan
+wal kwamen.&mdash;Dit vuur noodzaakte Luitenant <span class=
+"sc">Broers</span>, om met zijne onderhebbende manschappen naar het
+dorp te wijken, hetgeen zij echter niet deden, dan na de beide
+veldstukjes vernageld te hebben, die later den Engelschen in handen
+vielen, door wien ook 9 tjalken werden prijs gemaakt en een verbrand,
+terwijl twee andere vaartuigen intusschen gelegenheid hadden gevonden,
+om den vijand te ontkomen.</p>
+<p>Gedurende twee uren openden de Engelschen op de onzen een hevig
+vuur, doch vruchteloos;&mdash;de moed en de goed gekozen positie dezer
+laatsten was oorzaak, dat het dorp behouden bleef. <span class=
+"pagenum">[<a id="pb19" href="#pb19" name="pb19">19</a>]</span></p>
+<p>Wij besluiten deze schets, met het volgende omtrent de bevolking aan
+te merken.</p>
+<p>Over het geheel worden deze eilanders, waaronder er thans ook velen
+zijn, die ten gevolge van verminderde welvaart, in armoedige
+omstandigheden verkeeren, om hunne regtschapenheid, trouw en reine
+zeden, algemeen geacht.</p>
+<p>Hunne huishouding is in den regel eenvoudig, terwijl hunne
+kleederdragt, ten opzigte waarvan vooral sommige vrouwen nog al pronk-
+en modeziek zijn, de gewone Friesche volksdragt is.</p>
+<p>Hun verkeer met alle soorten van menschen, onafscheidelijk met het
+zeemansleven verbonden, maakt, dat zij ook voor het meerendeel in
+uitwendige beschaving niet ten achteren komen.&mdash;</p>
+<p>Eene bijzondere gewoonte is hier de oprigting van eenen
 <i>Meiboom</i>, hier <span class="ex">Kallemooi</span> geheeten, en wel
 Zaturdags voor Pinksteren, wordende dan de kermis, die drie dagen
 duurt, ingewijd.</p>
-<p class="par">De jonge lieden planten namelijk op den avond van
-voormelden Zaturdag, een&rsquo; mast in den grond, aan welks boveneinde
-een&rsquo; groenen boomtak bevestigd wordt. Aan deze laatste hangt
-een&rsquo; mand, waarin den haan gezet wordt, die, voorzien van
-genoegzaam voedsel, gedurende den kermistijd d&aacute;&aacute;r blijft
-hangen. Na afloop der kermis wordt de Kallemooi weder afgebroken, en
-den haan, den eigenaar (doorgaans de kastelein) terugbezorgd.</p>
-<p class="par">Doop- en huwlijks-plegtigheden worden hier gelijk elders
-in ons vaderland gevierd. Een vriendenmaal wordt bij zulke gelegenheden
-in geen geval verzuimd.&mdash;</p>
-<p class="par">Het onderlinge verkeer der jongelieden, pleit zeer ten
-gunste van het zedelijk karakter dezer eilanders, en ofschoon dezen de
-meeste vrijheid wordt gelaten, zoo hoort men al zeer zeldzaam van
-onzedelijke bedrijven. Onechte geboorten <span class="pagenum">[<a id=
-"pb20" href="#pb20" name="pb20">20</a>]</span>hebben er hoogst zelden
-plaats, terwijl wij van huisselijke twisten als anderzins, geene
-voorbeelden kennen.&mdash;</p>
-<p class="par">Omtrent het zoogenaamde <i>vrijen</i> merken wij aan,
-dat er dan eerst een welgemeend <i>verbond der liefde</i>, tusschen
-twee jonge lieden, geacht kan worden te bestaan, wanneer beide zich des
-Zondags, te zamen naar de kerk begeven; alsdan zegt men, dat zij <i>aan
-elkander verloofd zijn</i>, in welk geval het tot de zeldzaamheden
-behoort, indien zoodanig <i>verloofd zijn</i>, niet gevolgd wordt door
+<p>De jonge lieden planten namelijk op den avond van voormelden
+Zaturdag, een&rsquo; mast in den grond, aan welks boveneinde een&rsquo;
+groenen boomtak bevestigd wordt. Aan deze laatste hangt een&rsquo;
+mand, waarin den haan gezet wordt, die, voorzien van genoegzaam
+voedsel, gedurende den kermistijd d&aacute;&aacute;r blijft hangen. Na
+afloop der kermis wordt de Kallemooi weder afgebroken, en den haan, den
+eigenaar (doorgaans de kastelein) terugbezorgd.</p>
+<p>Doop- en huwlijks-plegtigheden worden hier gelijk elders in ons
+vaderland gevierd. Een vriendenmaal wordt bij zulke gelegenheden in
+geen geval verzuimd.&mdash;</p>
+<p>Het onderlinge verkeer der jongelieden, pleit zeer ten gunste van
+het zedelijk karakter dezer eilanders, en ofschoon dezen de meeste
+vrijheid wordt gelaten, zoo hoort men al zeer zeldzaam van onzedelijke
+bedrijven. Onechte geboorten <span class="pagenum">[<a id="pb20" href=
+"#pb20" name="pb20">20</a>]</span>hebben er hoogst zelden plaats,
+terwijl wij van huisselijke twisten als anderzins, geene voorbeelden
+kennen.&mdash;</p>
+<p>Omtrent het zoogenaamde <i>vrijen</i> merken wij aan, dat er dan
+eerst een welgemeend <i>verbond der liefde</i>, tusschen twee jonge
+lieden, geacht kan worden te bestaan, wanneer beide zich des Zondags,
+te zamen naar de kerk begeven; alsdan zegt men, dat zij <i>aan elkander
+verloofd zijn</i>, in welk geval het tot de zeldzaamheden behoort,
+indien zoodanig <i>verloofd zijn</i>, niet gevolgd wordt door
 <i>getrouwd zijn</i>.</p>
-<p class="par">Het voornaamste, waardoor de Schiermonnikoogers zich van
-de overige Nederlanders onderscheiden, is hunne eigenaardige taal.
-Daarvan moge het volgende stukje ten bewijze strekken, dat, vervaardigd
-door een geboren Schiermonnikooger, met name <span class="sc">H.
-Conter</span>, Ons door vriendschappelijke bezorging, ter plaatsing in
-dit boekske werd afgestaan:</p>
+<p>Het voornaamste, waardoor de Schiermonnikoogers zich van de overige
+Nederlanders onderscheiden, is hunne eigenaardige taal. Daarvan moge
+het volgende stukje ten bewijze strekken, dat, vervaardigd door een
+geboren Schiermonnikooger, met name <span class="sc">H. Conter</span>,
+Ons door vriendschappelijke bezorging, ter plaatsing in dit boekske
+werd afgestaan:</p>
 <div lang="nl-schier" class="lgouter">
 <h4>KROMMER DAN KROM EN TOCH REGT.</h4>
 <div class="lg">
@@ -1325,8 +1399,8 @@ schijn&rsquo;,</p>
 </div>
 </div>
 <div lang="nl-schier" class="lgouter">
-<h4>DE AAISTE JANNEWARIS.<a class="noteref" id="xd21e846src" href=
-"#xd21e846" name="xd21e846src">5</a></h4>
+<h4>DE AAISTE JANNEWARIS.<a class="noteref" id="xd27e840src" href=
+"#xd27e840" name="xd27e840src">5</a></h4>
 <div class="lg">
 <p class="line">&rsquo;k Hef &rsquo;t wol vaker al probeere</p>
 <p class="line">Om i&euml;en st&ouml;k ien Eilaaunstaal,</p>
@@ -1403,11 +1477,11 @@ Neiajiear.&rdquo;</p>
 <p class="line">&rsquo;t Wet botter en aaik ligter.</p>
 <div class="lg">
 <div class="lg">
-<p class="line xd21e974">Wil mie dus vut geen straf op lesse,</p>
-<p class="line xd21e974">As &rsquo;t somtieds net to loazen wiea</p>
-<p class="line xd21e974">Want &rsquo;k ken &rsquo;t jemm&rsquo; wol
+<p class="line xd27e968">Wil mie dus vut geen straf op lesse,</p>
+<p class="line xd27e968">As &rsquo;t somtieds net to loazen wiea</p>
+<p class="line xd27e968">Want &rsquo;k ken &rsquo;t jemm&rsquo; wol
 mooi wiearheid sesse,</p>
-<p class="line xd21e974">&rsquo;k Wiea blied, dat ik het z&ouml; viear
+<p class="line xd27e968">&rsquo;k Wiea blied, dat ik het z&ouml; viear
 hiea.&mdash;</p>
 </div>
 </div>
@@ -1418,81 +1492,82 @@ hiea.&mdash;</p>
 </div>
 <div class="footnotes">
 <hr class="fnsep">
-<p class="par footnote"><span class="label"><a class="noteref" id=
-"xd21e421" href="#xd21e421src" name="xd21e421">1</a></span> Sedert 1853
+<div class="footnote-body">
+<p class="footnote"><span class="label"><a class="noteref" id=
+"xd27e415" href="#xd27e415src" name="xd27e415">1</a></span> Sedert 1853
 bezit het eiland twee vuurtorens. De eerste staat N. N. W. van de kerk;
 de andere N. W. ten W. van daar. Beiden zijn 103 voeten hoog. De eerste
 staat op het vlakke land, de andere op eene duin. Bij heldere lucht
 zijn dezelve op eenen afstand 5 mijlen in zee zigtbaar. Er branden
 staande lichten in van de 2<sup>e</sup> klasse.&nbsp;<a class="fnarrow"
-href="#xd21e421src">&uarr;</a></p>
-<p class="par footnote"><span class="label"><a class="noteref" id=
-"xd21e559" href="#xd21e559src" name="xd21e559">2</a></span> Zie beneden
+href="#xd27e415src">&uarr;</a></p>
+<p class="footnote"><span class="label"><a class="noteref" id=
+"xd27e553" href="#xd27e553src" name="xd27e553">2</a></span> Zie beneden
 op bladz. 23.&nbsp;<a class="fnarrow" href=
-"#xd21e559src">&uarr;</a></p>
-<p class="par footnote"><span class="label"><a class="noteref" id=
-"xd21e577" href="#xd21e577src" name="xd21e577">3</a></span> De
+"#xd27e553src">&uarr;</a></p>
+<p class="footnote"><span class="label"><a class="noteref" id=
+"xd27e571" href="#xd27e571src" name="xd27e571">3</a></span> De
 kunstmatige zeeweringen op dit eiland bestaan in dijken, wier
 buitenzijden beschoten zijn met opstaande planken of schrooten, die
 bevestigd zijn aan strekkende balken, welke ondersteund worden door
 ingeheide palen, die met eene tusschenruimte van 1&frac12; &agrave; 2
 voet langs den geheelen dijk staan.&nbsp;<a class="fnarrow" href=
-"#xd21e577src">&uarr;</a></p>
-<p class="par footnote"><span class="label"><a class="noteref" id=
-"xd21e678" href="#xd21e678src" name="xd21e678">4</a></span>
+"#xd27e571src">&uarr;</a></p>
+<p class="footnote"><span class="label"><a class="noteref" id=
+"xd27e672" href="#xd27e672src" name="xd27e672">4</a></span>
 Tegenwoordig telt men onder de bevolking 21 kapiteins, wier schepen
 hier&mdash;en 25, wier schepen elders te huis
 behooren.&mdash;&nbsp;<a class="fnarrow" href=
-"#xd21e678src">&uarr;</a></p>
-<p class="par footnote"><span class="label"><a class="noteref" id=
-"xd21e846" href="#xd21e846src" name="xd21e846">5</a></span> De eerste
-Januarij.&nbsp;<a class="fnarrow" href="#xd21e846src">&uarr;</a></p>
+"#xd27e672src">&uarr;</a></p>
+<p class="footnote"><span class="label"><a class="noteref" id=
+"xd27e840" href="#xd27e840src" name="xd27e840">5</a></span> De eerste
+Januarij.&nbsp;<a class="fnarrow" href="#xd27e840src">&uarr;</a></p>
+</div>
 </div>
 </div>
 </div>
 <div class="back">
-<div lang="nl" class="div1 chapter">
+<div lang="nl" class="div1 appendix">
 <div class="divHead">
 <h2 class="main">EXTRACT UIT DE:</h2>
 </div>
 <div class="divBody">
-<p class="par first">&bdquo;<i>Verdediginge van het Vrij<br>
+<p class="first">&bdquo;<i>Verdediginge van het Vrij<br>
 eygen gekogte Regt van Civile<br>
 en Criminele Justitie, over<br>
 de Heerlijkheid Schiermonnikoog</i>.&mdash;</p>
-<p class="par">&bdquo;Onder alle volkeren van Europa Frieslandt geroemt
-werdende, te leven na de Roomsche Keizerlijke Wetten, en hare
-Land-regten en Statuten soo veel doenlijk conform deselve, volgens het
-goedvinden van Albert Hertog van Saxen, in den Jare 1499 in train
-gebragt, als noch in heilige Observantie zijnde, soo is het seer te
-verwonderen, dat men aldaar over een eijgen vrij gekogt Regt moet
-disputeren, ende wel over een regt van een stuk goed eertijds soo seer
-veragt, ende dat nooit het geringste gedeelte van die Provincie is
-geweest:</p>
-<p class="par">&bdquo;Want, wanneer de Heerlijkheit van Schiermonnikoog
-nog in den eigendom van de Heeren Staten van Frieslandt was, en onder
-de Domainen van die Provincie behoorde, bestonde het alleen in eenige
-weinige visschers hutten, die van arme menschen wierden bewoont, sig
-met visschen generende, en jaarlijks voor de Provincie van Frieslandt
-niet meer opbragte dan seven &acirc; acht honderd Car. guldens, als
+<p>&bdquo;Onder alle volkeren van Europa Frieslandt geroemt werdende,
+te leven na de Roomsche Keizerlijke Wetten, en hare Land-regten en
+Statuten soo veel doenlijk conform deselve, volgens het goedvinden van
+Albert Hertog van Saxen, in den Jare 1499 in train gebragt, als noch in
+heilige Observantie zijnde, soo is het seer te verwonderen, dat men
+aldaar over een eijgen vrij gekogt Regt moet disputeren, ende wel over
+een regt van een stuk goed eertijds soo seer veragt, ende dat nooit het
+geringste gedeelte van die Provincie is geweest:</p>
+<p>&bdquo;Want, wanneer de Heerlijkheit van Schiermonnikoog nog in den
+eigendom van de Heeren Staten van Frieslandt was, en onder de Domainen
+van die Provincie behoorde, bestonde het alleen in eenige weinige
+visschers hutten, die van arme menschen wierden bewoont, sig met
+visschen generende, en jaarlijks voor de Provincie van Frieslandt niet
+meer opbragte dan seven &acirc; acht honderd Car. guldens, als
 geblijken kan uit de rekeningen der Domainen van die tijdt.&rdquo;</p>
-<div class="par">&bdquo;Ook wierde het doen ter tijdt door de Heeren
-Staten, als behorende aan den eijgendom van de provincie, <i>jure
-dominii</i> bestierd, sonder dat vereischt wierde eenig ander
-Hoog-Geregte, omme haar in de administratie van de civile <span class=
-"pagenum">[<a id="pb24" href="#pb24" name="pb24">24</a>]</span>en
-criminele Justitie te adsisteren, &rsquo;t welk ook van geen geregte
-hoe hoog konde gepretendeert worden, ten ware het specialijk van de
-Heeren Eygenaars was gedemandeert, dat nooit geschiet is...... gelijk
+<p>&bdquo;Ook wierde het doen ter tijdt door de Heeren Staten, als
+behorende aan den eijgendom van de provincie, <i>jure dominii</i>
+bestierd, sonder dat vereischt wierde eenig ander Hoog-Geregte, omme
+haar in de administratie van de civile <span class="pagenum">[<a id=
+"pb24" href="#pb24" name="pb24">24</a>]</span>en criminele Justitie te
+adsisteren, &rsquo;t welk ook van geen geregte hoe hoog konde
+gepretendeert worden, ten ware het specialijk van de Heeren Eygenaars
+was gedemandeert, dat nooit geschiet is&#8202;&hellip;&hellip; gelijk
 ook op te maken is uijt de Staats-Regeringe&rdquo; <i>van
 Friesland</i>, &bdquo;als bestaande uijt vier Quartieren, onder geen
 van welke Schiermonnikoog behoort,&rdquo; <i>of waarvan althans geene
-melding is gemaakt</i><a class="noteref" id="xd21e1014src" href=
-"#xd21e1014" name="xd21e1014src">1</a>.</div>
-<p class="par">&bdquo;De reden waarom deselve daarbuijten is gelaten,
-is ogenschijnlijk dese, namentlijk de inconvenientie ten respecte van
-de verafgelegentheit, welke ondragelijke kosten voor dese arme
-visschers soude veroorsaken, ja boven haar vermogen gaan; of de kleijne
+melding is gemaakt</i><a class="noteref" id="xd27e1008src" href=
+"#xd27e1008" name="xd27e1008src">1</a>.</p>
+<p>&bdquo;De reden waarom deselve daarbuijten is gelaten, is
+ogenschijnlijk dese, namentlijk de inconvenientie ten respecte van de
+verafgelegentheit, welke ondragelijke kosten voor dese arme visschers
+soude veroorsaken, ja boven haar vermogen gaan; of de kleijne
 aangelegentheit, om dat geen part of deel was van de Provincie, veel
 min ijets in de Staatsregeringe van Frieslandt te seggen hadde; of
 omdat het getal der Inwoonders doen ter tijdt soo kleijn was, dat het
@@ -1520,61 +1595,61 @@ met <i>alle deselve</i> regten en pr&aelig;eminentien, uit welken
 hoofde ook de Eygenaars de lasten van de Jurisdictie moeten
 dragen,&rdquo; <i>al hetwelk ten koopbrief soo specifice staat
 uytgedrukt</i></p>
-<p class="par">&bdquo;Dat de Heerlijkheid van Schiermonkoog met sulk
-een vrij eijgene civile en criminele Justitie verkogt is, behoeft
-niemant vreemt voor te komen, geconsidereert zijnde, dat het geschiet
-is op verzoek van Gecommitteerde Raden van Staaten, voorbehoudens den
-nooddwang uijt kragte van de reserve van Souverainiteit.&rdquo;</p>
-<p class="par">&bdquo;Soo heeft ook Ameland voormaals behoort ouder
-Frieslandt,&rdquo;<a class="noteref" id="xd21e1050src" href=
-"#xd21e1050" name="xd21e1050src">2</a> alsmede het Eyland <span class=
+<p>&bdquo;Dat de Heerlijkheid van Schiermonkoog met sulk een vrij
+eijgene civile en criminele Justitie verkogt is, behoeft niemant vreemt
+voor te komen, geconsidereert zijnde, dat het geschiet is op verzoek
+van Gecommitteerde Raden van Staaten, voorbehoudens den nooddwang uijt
+kragte van de reserve van Souverainiteit.&rdquo;</p>
+<p>&bdquo;Soo heeft ook Ameland voormaals behoort ouder
+Frieslandt,&rdquo;<a class="noteref" id="xd27e1044src" href=
+"#xd27e1044" name="xd27e1044src">2</a> alsmede het Eyland <span class=
 "ex">de Bandt</span>, dat Noordelijker lag<a class="noteref" id=
-"xd21e1056src" href="#xd21e1056" name=
-"xd21e1056src">3</a>,&mdash;benevens de Heerlijkheid <span class=
+"xd27e1050src" href="#xd27e1050" name=
+"xd27e1050src">3</a>,&mdash;benevens de Heerlijkheid <span class=
 "ex">Visvliet</span> welke voormaals door de Staten verkogt zijn, met
 het regt van civile en criminele Justitie,&mdash;&bdquo;sonder dat het
 Hof van Frieslandt sig oijt of oijt met de Jurisdictie van dien
 gemoeijt heeft.&mdash;</p>
-<p class="par">&bdquo;Aanmerkelijk is het, dat er geen een
-Dissentierende gevonden wort, of hij stelt vast en seker, dat aan de
-Heer <span class="sc">Stachouwer</span> Is Verkogt, ende in eygendom
-overgedragen de civile en criminele Jurisdictie, ook kan dat niet
-ontkent worden volgens de woorden van <i>het</i> Koop-brief <i>en daar
-mede te doen en laten sulks een ijder met sijn vrij eijgen beoorlovet
-is</i>.&rdquo; <span class="pagenum">[<a id="pb26" href="#pb26" name=
+<p>&bdquo;Aanmerkelijk is het, dat er geen een Dissentierende gevonden
+wort, of hij stelt vast en seker, dat aan de Heer <span class=
+"sc">Stachouwer</span> Is Verkogt, ende in eygendom overgedragen de
+civile en criminele Jurisdictie, ook kan dat niet ontkent worden
+volgens de woorden van <i>het</i> Koop-brief <i>en daar mede te doen en
+laten sulks een ijder met sijn vrij eijgen beoorlovet is</i>.&rdquo;
+<span class="pagenum">[<a id="pb26" href="#pb26" name=
 "pb26">26</a>]</span></p>
-<p class="par">&bdquo;Waaromme ook geen uijtsonderinge van sodanige
+<p>&bdquo;Waaromme ook geen uijtsonderinge van sodanige
 Jurisdicti&euml;n plaats kan hebben, gelijk verscheijdene criminele
 Sententien bij den Eijgenaar van Schiermonkoog sijn ter executie
 gesteld, selve die aan den lijve ginge, waar inne hij door niemant oijt
 ofte oijt is belet of geturbeert.&rdquo;&mdash;</p>
-<p class="par">&bdquo;Also in Frieslandt geen andere Geregten bekent
-sijn, als Hoge en Lage, soo is het een ontegenseggelijke waarheijdt,
-dat de Heeren Staten ten tijde van de koop geen andere Jurisdictie
-konnen geseijt worden gehadt te hebben, als die hoogste is, welk
-Hoog-geregte de selve aan den Heer Stachouwer.&rdquo;&mdash;</p>
-<p class="par">&bdquo;Immers kan niet ontkent worden, dat de Heeren
-Staten hebben verkogt het gene haar eijgen was, ende geensins, dat de
-selve met een tweede gemeen hadden, nog veel minder dat Regt, dat een
-ander, namentlijk de Ingesetenen van de Heerlijkheijt toebehoorde,
-alwaaromme de Heeren Staten, hebbende een Souveraine Jurisdictie, geen
-andere konnen verstaan worden verkogt te hebben, als die de hare
+<p>&bdquo;Also in Frieslandt geen andere Geregten bekent sijn, als Hoge
+en Lage, soo is het een ontegenseggelijke waarheijdt, dat de Heeren
+Staten ten tijde van de koop geen andere Jurisdictie konnen geseijt
+worden gehadt te hebben, als die hoogste is, welk Hoog-geregte de selve
+aan den Heer Stachouwer.&rdquo;&mdash;</p>
+<p>&bdquo;Immers kan niet ontkent worden, dat de Heeren Staten hebben
+verkogt het gene haar eijgen was, ende geensins, dat de selve met een
+tweede gemeen hadden, nog veel minder dat Regt, dat een ander,
+namentlijk de Ingesetenen van de Heerlijkheijt toebehoorde, alwaaromme
+de Heeren Staten, hebbende een Souveraine Jurisdictie, geen andere
+konnen verstaan worden verkogt te hebben, als die de hare
 was.&mdash;</p>
-<p class="par">&bdquo;Hier tegens kan niets ingebragt worden, want de
-Eijgenaars van de Heerlijkheijt Schiermonkoge sijn door de koop
-geworden ware Eijgenaars, soo van de Landen, als van de Regten, enz.
-sonder eenige conditie, bepalinge of reserve, gelijk de selve
-Eijgenaars in hare Deductie, aan de Heeren Staten van Frieslandt den 25
-Februari 1737 gepresenteert, hebben aangetoont.</p>
-<p class="par">&bdquo;Daarom is men geheel het spoor bijster, wanneer
-men de Heer van Schiermonkoog, als Eijgenaar van de civile en criminele
-Justitie van die Heerlijkheit, nogtans wat haar personen en
-patrimonieel goedt, selfs die soo vrij gekogte Heerlijkheid belangt,
-subject stelt onder de Hove van Frieslandt.&mdash; <span class=
-"pagenum">[<a id="pb27" href="#pb27" name="pb27">27</a>]</span></p>
-<p class="par">&bdquo;De Heerlijkheit van Schiermonkoog is niet bekent,
-dat oijt aan de Provincie van Frieslandt vast, of een gedeelte van dien
-geweest is, maar sedert immemoriale tijdt daarvan afgescheiden door de
+<p>&bdquo;Hier tegens kan niets ingebragt worden, want de Eijgenaars
+van de Heerlijkheijt Schiermonkoge sijn door de koop geworden ware
+Eijgenaars, soo van de Landen, als van de Regten, enz. sonder eenige
+conditie, bepalinge of reserve, gelijk de selve Eijgenaars in hare
+Deductie, aan de Heeren Staten van Frieslandt den 25 Februari 1737
+gepresenteert, hebben aangetoont.</p>
+<p>&bdquo;Daarom is men geheel het spoor bijster, wanneer men de Heer
+van Schiermonkoog, als Eijgenaar van de civile en criminele Justitie
+van die Heerlijkheit, nogtans wat haar personen en patrimonieel goedt,
+selfs die soo vrij gekogte Heerlijkheid belangt, subject stelt onder de
+Hove van Frieslandt.&mdash; <span class="pagenum">[<a id="pb27" href=
+"#pb27" name="pb27">27</a>]</span></p>
+<p>&bdquo;De Heerlijkheit van Schiermonkoog is niet bekent, dat oijt
+aan de Provincie van Frieslandt vast, of een gedeelte van dien geweest
+is, maar sedert immemoriale tijdt daarvan afgescheiden door de
 Lauwer-Stroom en alsoo twee afsonderlijke Heerlijkheden, ten minste was
 het soo al omtrent der Franke wederkomste bij de overwateringe van de
 dartiende eeuwe, volgens getuigenisse van <span class="sc">Menso
@@ -1585,51 +1660,51 @@ bestaande in ses Raden uijt Oostergoo en vier uijt Westergoo, benevens
 Hessel Martena als der Vorsten Cancellier, om uijt de naam van die
 Vorst te vonnissen, welk Hof door sijn Soon Georg in den Jare 1504
 nader is bevestigt, en de Cancellarije binnen Leeuwarden
-gelegt<a class="noteref" id="xd21e1091src" href="#xd21e1091" name=
-"xd21e1091src">4</a>.</p>
-<p class="par">&bdquo;De woorden in den koopbrief vermelt, <i>ende bij
-gevolge van dien aan de Generale Unie</i>, expliceren genoegsaam wat
-Souverainiteit de Heeren verkoopers gereserveert hebben, namentlijk
-sodanige, die haar de magt en autoriteit gaf, om dese Heerlijkheit van
-Schiermonkoog te doen verblijven onder de Generale Unie, of onder
-sodanige aliantie, als de selve namaals verstonden; want voor de
-verkopinge als een geassocieerde Heerlijkheit mede begrepen onder de
-Generale Unie, was het in de magt niet van de Heeren Staten, sonder
-pr&aelig;judicie deselve behalven dese reserve te verkopen.&mdash;</p>
-<p class="par">&bdquo;Wat aangaat de comporatie van de Geregtigheden
-van het Hof van Hollandt ende de Heerlijkheden, in die Provincie
-gelegen, met het Regt van het Hof van Frieslandt, <span class=
-"pagenum">[<a id="pb28" href="#pb28" name="pb28">28</a>]</span>en het
-Regt van de Heer van Schiermonkoog, kan in dezen geen de minste
-applicatie hebben, van wegens het over groot verschil dat tusschen die
-beide is, namentlijk om dat de Hollandsche Heerlijkheden, leggen in die
-Provintie, en wel het grootste gedeelte van het Graafschap uijtmaken,
-als ook omdat die Heerlijkheden verkogt worden als <i>feudale
-goederen</i> met submissie van den Hove en Hoogen Raad, waar nog bij
-gevoegt moet worden, dat het met eene speciale expressie is uijtgedrukt
-in de Instructie van het Hof van Hollandt van den 20 Augusti 1531, Art.
-7, 8 en 12, en bij de alteratie van eenige Articulen van de Instructie
-van den Leen-Hove van Hollant van den 2 Maij 1525, wort de Jurisdictie
-uijtgedrukt te sijn, over Heerlijkheden, hoge en lage, begraven
-Huijsen, Sloten of Jurisdictien, soo ook in de Ordonnantie van de
-Criminele Justitie van Konink Philip Anno 1570, Art. 14 en veele
-volgende: Waar vint men van dit alles de minste schijn in Frieslandt
-ten resspecte van de Heerlijkheit Schiermonkoog? ende om den onkundige
-nog verder op de regte weg te helpen, is werelt-kundig, dat de
-Eijgenaars van Heerlijkheden in Hollandt leden sijn van die Provintie,
-die het Hof van Hollandt als Opper-regters over <span class=
-"sc">haar</span> hebben verkoren; men zie maar eens het accoord
-tusschen Hollandt en Zeelandt van den 8 November 1576, en verdrag van
-den 13 Augusti 1587, bestaande de geheele Staats-regeringe van Hollandt
-uit Heerlijkheden en Steden.</p>
-<p class="par">&bdquo;Wat belangt de verscheidene gevallen van
-sententien, appoinchementen, citatien en exploicten, met vrijwillige
-toelatinge geaccordeert of sonder de selve geschiet, geven niet te
-kennen, dat het Hof van Frieslandt het Opper-gerigte heeft, over de
-Heerlijkheid Schiermonkoog. <span class="pagenum">[<a id="pb29" href=
-"#pb29" name="pb29">29</a>]</span></p>
-<p class="par">&bdquo;De eigenaars van Schiermonkoog weten, dat hare
-voorsaten tot drie verscheidene tijden sig nopens dit poinct (<i>in
+gelegt<a class="noteref" id="xd27e1085src" href="#xd27e1085" name=
+"xd27e1085src">4</a>.</p>
+<p>&bdquo;De woorden in den koopbrief vermelt, <i>ende bij gevolge van
+dien aan de Generale Unie</i>, expliceren genoegsaam wat Souverainiteit
+de Heeren verkoopers gereserveert hebben, namentlijk sodanige, die haar
+de magt en autoriteit gaf, om dese Heerlijkheit van Schiermonkoog te
+doen verblijven onder de Generale Unie, of onder sodanige aliantie, als
+de selve namaals verstonden; want voor de verkopinge als een
+geassocieerde Heerlijkheit mede begrepen onder de Generale Unie, was
+het in de magt niet van de Heeren Staten, sonder pr&aelig;judicie
+deselve behalven dese reserve te verkopen.&mdash;</p>
+<p>&bdquo;Wat aangaat de comporatie van de Geregtigheden van het Hof
+van Hollandt ende de Heerlijkheden, in die Provincie gelegen, met het
+Regt van het Hof van Frieslandt, <span class="pagenum">[<a id="pb28"
+href="#pb28" name="pb28">28</a>]</span>en het Regt van de Heer van
+Schiermonkoog, kan in dezen geen de minste applicatie hebben, van
+wegens het over groot verschil dat tusschen die beide is, namentlijk om
+dat de Hollandsche Heerlijkheden, leggen in die Provintie, en wel het
+grootste gedeelte van het Graafschap uijtmaken, als ook omdat die
+Heerlijkheden verkogt worden als <i>feudale goederen</i> met submissie
+van den Hove en Hoogen Raad, waar nog bij gevoegt moet worden, dat het
+met eene speciale expressie is uijtgedrukt in de Instructie van het Hof
+van Hollandt van den 20 Augusti 1531, Art. 7, 8 en 12, en bij de
+alteratie van eenige Articulen van de Instructie van den Leen-Hove van
+Hollant van den 2 Maij 1525, wort de Jurisdictie uijtgedrukt te sijn,
+over Heerlijkheden, hoge en lage, begraven Huijsen, Sloten of
+Jurisdictien, soo ook in de Ordonnantie van de Criminele Justitie van
+Konink Philip Anno 1570, Art. 14 en veele volgende: Waar vint men van
+dit alles de minste schijn in Frieslandt ten resspecte van de
+Heerlijkheit Schiermonkoog? ende om den onkundige nog verder op de
+regte weg te helpen, is werelt-kundig, dat de Eijgenaars van
+Heerlijkheden in Hollandt leden sijn van die Provintie, die het Hof van
+Hollandt als Opper-regters over <span class="sc">haar</span> hebben
+verkoren; men zie maar eens het accoord tusschen Hollandt en Zeelandt
+van den 8 November 1576, en verdrag van den 13 Augusti 1587, bestaande
+de geheele Staats-regeringe van Hollandt uit Heerlijkheden en
+Steden.</p>
+<p>&bdquo;Wat belangt de verscheidene gevallen van sententien,
+appoinchementen, citatien en exploicten, met vrijwillige toelatinge
+geaccordeert of sonder de selve geschiet, geven niet te kennen, dat het
+Hof van Frieslandt het Opper-gerigte heeft, over de Heerlijkheid
+Schiermonkoog. <span class="pagenum">[<a id="pb29" href="#pb29" name=
+"pb29">29</a>]</span></p>
+<p>&bdquo;De eigenaars van Schiermonkoog weten, dat hare voorsaten tot
+drie verscheidene tijden sig nopens dit poinct (<i>in
 contradictorio</i>) hebben laten horen, eens in den jare 1648 den 4
 Julij, wanneer het finaal appoinctement was: <i>sal sig desen aangaande
 hebben te addresseren aan de Heer van de
@@ -1648,122 +1723,74 @@ Frieslandt zelfs soo verstaan, en verstrekken alsoo als drie
 onwraakbare getuigen, van het regt van de Heerlijkheit Schiermonkoog
 enz.&rdquo;</p>
 <hr class="tb">
-<p class="par"></p>
-<p class="par">Dit stuk waaraan een gedrukt jaartal ontbreekt, is aldus
+<p>Dit stuk waaraan een gedrukt jaartal ontbreekt, is aldus
 onderschreven:</p>
-<p class="par signed">&bdquo;Uijt naam en order van de<br>
+<p class="signed">&bdquo;Uijt naam en order van de<br>
 Eijgenaars van de Heerlijkheit<br>
 Schiermonkoog.&rdquo;</p>
-<p class="par signed">(get.) S. ACRONIUS.</p>
-<p class="par">Bij of onder deze naamteekening staat <i>geschreven:</i>
-1738. <span class="pagenum">[<a id="pb30" href="#pb30" name=
+<p class="signed">(get.) S. ACRONIUS.</p>
+<p>Bij of onder deze naamteekening staat <i>geschreven:</i> 1738.
+<span class="pagenum">[<a id="pb30" href="#pb30" name=
 "pb30">30</a>]</span></p>
 </div>
 <div class="footnotes">
 <hr class="fnsep">
-<p class="par footnote"><span class="label"><a class="noteref" id=
-"xd21e1014" href="#xd21e1014src" name="xd21e1014">1</a></span></p>
+<div class="footnote-body">
+<p class="footnote"><span class="label"><a class="noteref" id=
+"xd27e1008" href="#xd27e1008src" name="xd27e1008">1</a></span></p>
 <div class="table">
-<table class="xd21e1016">
+<table class="xd27e1010">
 <tr>
 <td class="cellLeft cellTop">Instructie van het Hof van Frieslandt van
 den</td>
 <td class="cellRight cellTop">10 Maij 1597, Art. 24.</td>
 </tr>
 <tr>
-<td class="cellLeft cellBottom">
-<table class="ditto">
-<tr class="s">
-<td>Instructie</td>
-</tr>
-<tr class="d">
-<td>,,</td>
-</tr>
-</table>
-<table class="ditto">
-<tr class="s">
-<td>van</td>
-</tr>
-<tr class="d">
-<td>,,</td>
-</tr>
-</table>
-<table class="ditto">
-<tr class="s">
-<td>het</td>
-</tr>
-<tr class="d">
-<td>,,</td>
-</tr>
-</table>
-<table class="ditto">
-<tr class="s">
-<td>Hof</td>
-</tr>
-<tr class="d">
-<td>,,</td>
-</tr>
-</table>
-<table class="ditto">
-<tr class="s">
-<td>van</td>
-</tr>
-<tr class="d">
-<td>,,</td>
-</tr>
-</table>
-<table class="ditto">
-<tr class="s">
-<td>Frieslandt</td>
-</tr>
-<tr class="d">
-<td>,,</td>
-</tr>
-</table>
-<table class="ditto">
-<tr class="s">
-<td>van</td>
-</tr>
-<tr class="d">
-<td>,,</td>
-</tr>
-</table>
-<table class="ditto">
-<tr class="s">
-<td>den</td>
-</tr>
-<tr class="d">
-<td>,,</td>
-</tr>
-</table>
-</td>
+<td class="cellLeft cellBottom"><span class="ditto"><span class=
+"s">Instructie</span><span class="d"><span class=
+"i">,,</span></span></span><span class="ditto"><span class=
+"s">van</span><span class="d"><span class=
+"i">,,</span></span></span><span class="ditto"><span class=
+"s">het</span><span class="d"><span class=
+"i">,,</span></span></span><span class="ditto"><span class=
+"s">Hof</span><span class="d"><span class=
+"i">,,</span></span></span><span class="ditto"><span class=
+"s">van</span><span class="d"><span class=
+"i">,,</span></span></span><span class="ditto"><span class=
+"s">Frieslandt</span><span class="d"><span class=
+"i">,,</span></span></span><span class="ditto"><span class=
+"s">van</span><span class="d"><span class=
+"i">,,</span></span></span><span class="ditto"><span class=
+"s">den</span><span class="d"><span class=
+"i">,,</span></span></span></td>
 <td class="cellRight cellBottom">28 Oct. 1637, Art. 28.</td>
 </tr>
 </table>
 </div>
-&nbsp;<a class="fnarrow" href="#xd21e1014src">&uarr;</a>
-<p class="par footnote"><span class="label"><a class="noteref" id=
-"xd21e1050" href="#xd21e1050src" name="xd21e1050">2</a></span> Volgens
+&nbsp;<a class="fnarrow" href="#xd27e1008src">&uarr;</a>
+<p class="footnote"><span class="label"><a class="noteref" id=
+"xd27e1044" href="#xd27e1044src" name="xd27e1044">2</a></span> Volgens
 erkentenisse van F. D. v. Camminga in Vind-Secund-Amel.&nbsp;<a class=
-"fnarrow" href="#xd21e1050src">&uarr;</a></p>
-<p class="par footnote"><span class="label"><a class="noteref" id=
-"xd21e1056" href="#xd21e1056src" name="xd21e1056">3</a></span> Te zien
+"fnarrow" href="#xd27e1044src">&uarr;</a></p>
+<p class="footnote"><span class="label"><a class="noteref" id=
+"xd27e1050" href="#xd27e1050src" name="xd27e1050">3</a></span> Te zien
 bij Winsemius.&nbsp;<a class="fnarrow" href=
-"#xd21e1056src">&uarr;</a></p>
-<p class="par footnote"><span class="label"><a class="noteref" id=
-"xd21e1091" href="#xd21e1091src" name="xd21e1091">4</a></span> Winsem.
+"#xd27e1050src">&uarr;</a></p>
+<p class="footnote"><span class="label"><a class="noteref" id=
+"xd27e1085" href="#xd27e1085src" name="xd27e1085">4</a></span> Winsem.
 Chronijk, Schotanus Friessche Histori&euml;n op die Jaren, Hub. Hist.
 Civ. P. 2, L. 1, Sect. 3, Cap. 10.&nbsp;<a class="fnarrow" href=
-"#xd21e1091src">&uarr;</a></p>
+"#xd27e1085src">&uarr;</a></p>
 </div>
 </div>
-<div class="div1 chapter">
+</div>
+<div class="div1 appendix">
 <div class="divHead">
 <h2 class="main">VERKLARING DER TEEKENS VOORKOMENDE OP HET KAARTJE VAN
 SCHIERMONNIKOOG.</h2>
 </div>
 <div class="divBody">
-<p class="par first">VERKLARING.</p>
+<p class="first">VERKLARING.</p>
 <table class="splitlisttable">
 <tr>
 <td>
@@ -1794,35 +1821,74 @@ SCHIERMONNIKOOG.</h2>
 </td>
 </tr>
 </table>
-<p class="par"></p>
 </div>
 </div>
 <div class="transcribernote">
 <h2 class="main">Colofon</h2>
 <h3 class="main">Beschikbaarheid</h3>
-<p class="par first">Dit eBoek is voor kosteloos gebruik door iedereen
+<p class="first">Dit eBoek is voor kosteloos gebruik door iedereen
 overal, met vrijwel geen beperkingen van welke soort dan ook. U mag het
 kopi&euml;ren, weggeven of hergebruiken onder de voorwaarden van de
-<a class="exlink xd21e41" title="Externe link" href=
-"http://www.gutenberg.org/license" rel="license">Project Gutenberg
-Licentie</a> bij dit eBoek of on-line op <a class="exlink xd21e41"
+<a class="seclink xd27e43" title="Externe link" href=
+"https://www.gutenberg.org/license" rel="license">Project Gutenberg
+Licentie</a> bij dit eBoek of on-line op <a class="seclink xd27e43"
 title="Externe link" href=
-"http://www.gutenberg.org/">www.gutenberg.org</a>.</p>
-<p class="par">Dit eBoek is geproduceerd door het on-line
-gedistribueerd correctieteam op <a class="exlink xd21e41" title=
-"Externe link" href="http://www.pgdp.net/">www.pgdp.net</a>.</p>
-<p>Project Gutenberg catalogus pagina: <a class="pglink" href=
-"https://www.gutenberg.org/ebooks/44204">44204</a>.</p>
+"https://www.gutenberg.org/">www.gutenberg.org</a>.</p>
+<p>Dit eBoek is geproduceerd door het on-line gedistribueerd
+correctieteam op <a class="seclink xd27e43" title="Externe link" href=
+"https://www.pgdp.net/">www.pgdp.net</a>.</p>
+<h3 class="main">Metadata</h3>
+<table class="colophonMetadata">
+<tr>
+<td><b>Titel:</b></td>
+<td>Het eiland Schiermonnikoog en zijne bewoners</td>
+<td></td>
+</tr>
+<tr>
+<td><b>Auteur:</b></td>
+<td>Francis Allan (1826&ndash;1908)</td>
+<td><a href="https://viaf.org/viaf/169274248/" class=
+"seclink">Info</a></td>
+</tr>
+<tr>
+<td><b>Taal:</b></td>
+<td>Nederlands (Spelling De Vries-Te Winkel)</td>
+<td></td>
+</tr>
+<tr>
+<td><b>Oorspronkelijke uitgiftedatum:</b></td>
+<td>1856</td>
+<td></td>
+</tr>
+<tr>
+<td><b>Trefwoorden:</b></td>
+<td>Schiermonnikoog Island (The Netherlands)</td>
+<td></td>
+</tr>
+<tr>
+<td><b>Project Gutenberg:</b></td>
+<td><a href="https://www.gutenberg.org/ebooks/44204" class=
+"seclink">44204</a></td>
+<td></td>
+</tr>
+<tr>
+<td><b>GitHub:</b></td>
+<td><a href=
+"https://github.com/GutenbergSource/44204-Allan-Het-eiland-Schiermonnikoog"
+class="seclink">44204-Allan-Het-eiland-Schiermonnikoog</a></td>
+<td></td>
+</tr>
+</table>
 <h3 class="main">Codering</h3>
-<p class="par first">Dit boek is weergegeven in oorspronkelijke
+<p class="first">Dit boek is weergegeven in oorspronkelijke
 schrijfwijze. Afgebroken woorden aan het einde van de regel zijn
 stilzwijgend hersteld. Kennelijke zetfouten in het origineel zijn
 verbeterd. Deze verbeteringen zijn aangegeven in de colofon aan het
 einde van dit boek.</p>
-<p class="par">De kaart in dit boek ontbreekt in de beschikbare scans,
-en daarmee in deze editie. Personen met toegang tot dit werk wordt
-vriendelijk verzocht scans hiervan ter beschikking te stellen aan
-Project Gutenberg.</p>
+<p>De kaart in dit boek ontbreekt in de beschikbare scans, en daarmee
+in deze editie. Personen met toegang tot dit werk wordt vriendelijk
+verzocht scans hiervan ter beschikking te stellen aan Project
+Gutenberg.</p>
 <h3 class="main">Documentgeschiedenis</h3>
 <ul>
 <li>2013-11-15 Begonnen.</li>
@@ -1838,26 +1904,31 @@ dat deze links voor u niet werken.</p>
 <th>Bladzijde</th>
 <th>Bron</th>
 <th>Verbetering</th>
+<th>Bewerkingsafstand</th>
 </tr>
 <tr>
-<td class="width20"><a class="pageref" href="#xd21e387">8</a></td>
+<td class="width20"><a class="pageref" href="#xd27e381">8</a></td>
 <td class="width40 bottom">Kersnacht</td>
 <td class="width40 bottom">Kerstnacht</td>
+<td class="bottom">1</td>
 </tr>
 <tr>
-<td class="width20"><a class="pageref" href="#xd21e519">10</a></td>
+<td class="width20"><a class="pageref" href="#xd27e513">10</a></td>
 <td class="width40 bottom">de eigendommen zijn</td>
 <td class="width40 bottom">het eigendom is</td>
+<td class="bottom">8</td>
 </tr>
 <tr>
-<td class="width20"><a class="pageref" href="#xd21e601">14</a></td>
+<td class="width20"><a class="pageref" href="#xd27e595">14</a></td>
 <td class="width40 bottom">Schiermonikoog</td>
 <td class="width40 bottom">[<i>Verwijderd</i>]</td>
+<td class="bottom">14</td>
 </tr>
 <tr>
-<td class="width20"><a class="pageref" href="#xd21e706">17</a></td>
+<td class="width20"><a class="pageref" href="#xd27e700">17</a></td>
 <td class="width40 bottom">wachte</td>
 <td class="width40 bottom">wachtte</td>
+<td class="bottom">1</td>
 </tr>
 </table>
 </div>

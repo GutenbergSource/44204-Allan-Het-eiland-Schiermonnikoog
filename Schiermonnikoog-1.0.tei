@@ -8,8 +8,8 @@
 <fileDesc>
 <titleStmt>
 <title>Het eiland Schiermonnikoog en zijne bewoners</title>
-<author key="Allan, Francis" ref="https://viaf.org/viaf/169274248">Francis Allan (1826&ndash;1908)</author>
-<respStmt><resp>Transcription</resp> <name>Jeroen Hellingman</name></respStmt>
+<author key="Allan, Francis" ref="https://viaf.org/viaf/169274248/">Francis Allan (1826&ndash;1908)</author>
+<respStmt><resp>Transcription</resp> <name key="Hellingman, Jeroen">Jeroen Hellingman</name></respStmt>
 </titleStmt>
 <publicationStmt>
 <publisher>Project Gutenberg</publisher>
@@ -20,13 +20,14 @@
 <idno type=LibThing>#####</idno>
 <idno type=PGclearance>20130407012102allan</idno>
 <idno type=PGDPProjectId>projectID517f95595d203</idno>
+<idno type=PGSrc>44204-Allan-Het-eiland-Schiermonnikoog</idno>
 <idno type=epub-id>urn:uuid:abb06dc5-8186-4451-a67e-2245a184badd</idno>
 <idno type=PGnum>44204</idno>
 <date>2013-11-18</date>
 <availability lang=nl>
 <p>&availability.nl;
 
-<p>Dit eBoek is geproduceerd door het on-line gedistribueerd correctieteam op <xref url="http://www.pgdp.net/">www.pgdp.net</xref>.
+<p>Dit eBoek is geproduceerd door het on-line gedistribueerd correctieteam op <xref url="https://www.pgdp.net/">www.pgdp.net</xref>.
 
 </availability>
 </publicationStmt>
@@ -53,10 +54,6 @@
         <language id=nl-1700>Nederlands (Achtiende-eeuwse spelling)</language>
         <language id=nl-schier>Nederlands (Dialect van Schiermonnikoog)</language>
         <language id=nl>Nederlands</language>
-        <language id=en>Engels</language>
-        <language id=de>Duits</language>
-        <language id=fr>Frans</language>
-        <language id=la>Latijn</language>
     </langUsage>
     <textClass>
         <keywords>
@@ -152,7 +149,7 @@
 
 <p>De gemiddelde diepte van dit zeegat, dat vooral door zijnen sterken stroom, bij den zeeman bekend is, bedraagt 18&ndash;36 voeten. De stroom heeft te dezer plaats zulk eene groote kracht, dat men er, zelfs gedurende de strengste winters, geen ijs aantreft. Dit is echter niet het geval aan het andere <pb id=pb6 n=6>einde van het eiland. De ruimte van dáár tot aan de vaste kust der provincie Groningen, bestaat geheel uit Wadden en Zandvlakten, die bij gewone weêrsgesteldheid, met laag water of ebbe, telkenreize, bijna geheel en al droog vallen; ja, meermaals zoude men, door den nood gedreven, aan deze zijde, den overtogt naar den vasten wal, te voet kunnen ondernemen.&mdash;Men maakt echter van deze, altijd zeer gewaagde gelegenheid, om het eiland te verlaten, geen gebruik; naardien niet alleen de afstand groot, maar ook, omdat de grond op sommige plaatsen zeer los en moerassig is.&mdash;Gedurende strenge winters en aanhoudende koude, bedient men zich van het ijs, om den vasten wal te naderen.&mdash;
 
-<p>De geographische ligging van <hi rend=sc>Schiermonnikoog</hi>, Is 53°, 28&prime;, 47&Prime; N.B., en bijna 23&frac12;° O.L.&mdash;; de afstand van de Friesche kust 1&frac12; uur, van de Groninger kust en van het eiland Ameland 3 uur.
+<p>De geographische ligging van <hi rend=sc>Schiermonnikoog</hi>, is 53°, 28&prime;, 47&Prime; N.B., en bijna 23&frac12;° O.L.&mdash;; de afstand van de Friesche kust 1&frac12; uur, van de Groninger kust en van het eiland Ameland 3 uur.
 
 <p>Omtrent den naamsoorsprong van <hi rend=sc>Schiermonnikoog</hi> bestaat verschil van gevoelen. Naar sommiger meening zou dit eiland zijnen naam gekregen hebben van zekere monnik-orde of konvent, tot welks toenmalige bezittingen het behoorde. Het is echter niet genoegzaam zeker, of deze monniken, hun verblijf hebben gehouden in een, op het eiland toenmalig aanwezig klooster, dan wel in een ander gewijd gebouw, ergens elders in Friesland.&mdash;Welligt, dat <hi rend=sc>Schiermonnikoog</hi> eenen eigendom heeft uitgemaakt van de rijke kloosters <hi>Lidlum</hi> en <hi>Ludingakerk</hi>;&mdash;van dezen althans, is het bekend, dat derzelver bewoners, ter voldoening aan hunne schraapzucht, veel in het noordelijk gedeelte der tegenwoordige Zuiderzee, en de Wadden, hebben verrigt, dat naderhand ook op de gesteldheid van de noordelijke eilanden grooten invloed heeft uitgeoefend.&mdash;Zoo is het bekend, dat zij eene doorgraving lieten maken, in die strook lands, waaruit in lateren tijd de eilanden <hi rend=ex>Vlieland</hi> en <hi rend=ex>Terschelling</hi> zijn ontstaan, terwijl de <hi rend=ex>Abt</hi> <hi rend=sc>Gerhardus</hi>, <hi>van Lidlum</hi>, <pb id=pb7 n=7>in de nabijheid van <hi rend=ex>Terschelling</hi>, zijnen lusthof had. De naam daarvan, is nog aanwezig in de zandplaat <hi rend=ex>de Abt</hi>, bij laatstgemeld eiland, terwijl van de groote uitgestrektheid lands, waarvan de <hi rend=ex>Grind</hi> nog overig is gebleven, bijna niet meer dan den naam bekend is. En toch, <hi rend=ex>de Grind</hi> was eens eene hoogst belangrijke plaats, waar een der Abten zelfs eene school voor de hoogere wetenschappen had gesticht.&mdash;Ook is het bekend, dat de kloosterbroeders eene gracht lieten graven van <hi rend=ex>Harlingen</hi> naar <hi rend=ex>de Grind</hi>, welke thans nog het grootscheeps vaarwater uitmaakt, en de <hi rend=ex>Harlinger Jetting</hi>, (uitwatering, gieting) geheeten wordt.&mdash;Van de eertijds groote dorpen <hi rend=sc>Westerbierum</hi> en <hi rend=ex>Dijkshorne</hi>, zijn niet de minste sporen meer zigtbaar; terwijl evenzoo de voornaamste bezittingen van de aanzienlijke geslachten der <hi rend=ex>Harmana&apos;s</hi>, <hi rend=ex>Harlinga&apos;s</hi> en <hi rend=ex>Haltema&apos;s</hi>, in de diepte bedolven zijn.
 
@@ -192,7 +189,7 @@
 
 <p>Dan, niet alleen dat de veranderingen, welke er in den loop der eeuwen op <hi rend=sc>Schiermonnikoog</hi> hebben plaats gegrepen, blijken uit den bouw der drie kerken, in een betrekkelijk kort tijdsbestek; maar er is meer dat van die verandering getuigt. Zoo ontwaarde men omstreeks 1735, dat het buitenstrand aan de Z.-West zijde, door het verloopen der zeegaten en stroomen, op verontrustende wijze afnam. Deze afspoeling nam zoo zeer toe, dat men omtrent 20 jaren later, het aan de zee prijs geworden gedeelte lands, op meer dan een uur gaans konde begrooten, terwijl het volgens latere waarnemingen, van 1814 tot en met het noodlottige jaar 1825 gedaan, bleek, dat <hi rend=sc>Schiermonnikoog</hi> aan de zuid- en zuidwestelijke zijde, zoo zeer was ingekort, dat het in de breedte verloren gedeelte lands eene uitgestrektheid had gehad, bijna <pb id=pb12 n=12>gelijk aan die van het land, dat toen nog van den zeekant tot aan de duinen op het breedste gedeelte des eilands aanwezig was. Geen wonder dus, dat de inwoners met reden bevreesd waren voor het toekomstige lot van hun eiland, aangezien het te vermoeden was, dat, ingeval de loop des strooms door het verbreken of aanslibben der voorliggende gronden, geenen anderen weg werd aangewezen, de vaste bodem des eilands, binnen korten tijd, afgespoeld zoude zijn, tot zelfs daar waar het dorp was gebouwd. En nog te meer werden zij in hunne vrees bevestigd, naardien de duinen reeds op onderscheidene plaatsen waren geïnundeerd, en de Noordzee, ter plaatse waar deze natuurlijke zeeweringen ontbraken, met vollen golfslag op het vlakke gedeelte des eilands aankwam, terwijl het land dáár, waar dit niet plaats had, door aanhoudende overstuiving der zandduinen bedorven geraakte.&mdash;Zoo als wij boven reeds aanmerkten, hadden er van tijd tot tijd verhuizingen plaats gehad, ter oorzake waarvan de voormalige buurtschappen waren verdwenen. Dan ook dit middel, om den gevreesden vijand, het water, althans tijdelijk te ontkomen, baatte niet meer, aangezien de watervloed van Februarij 1825 had doen zien, dat de woningen reeds op het hoogste gedeelte des eilands stonden, zoodat het vooruitzigt der bewoners, bij eene aldus voortgaande afneming, waardoor het te voorzien was, dat het eiland eindelijk in eene kale zandbank zoude verkeeren, allezins bang was.&mdash;
 
-<p>Bovendien was het in het voormelde jaar, 1825, gebleken, dat de kunstmatige<note n=1>De kunstmatige zeeweringen op dit eiland bestaan in dijken, wier buitenzijden beschoten zijn met opstaande planken of schrooten, die bevestigd zijn aan strekkende balken, welke ondersteund worden door ingeheide palen, die met eene tusschenruimte van 1&frac12; à 2 voet langs den geheelen dijk staan.</note> zeeweringen, geene genoegzame sterkte bezaten, om, in tijd van nood, den aandrang des zeewaters te keeren. Zoo was het op den avond van den 5<hi rend=sup>den</hi> Februarij <pb id=pb13 n=13>v.m.j. dat het zeewater met zulk eene snelheid rees, dat het ongeveer ten zeven uren bijna 1/4 Ned. el hooger stond dan bij den hoogsten waterstand van den vloed in November 1824.&mdash;Het opkomend vloedwater stortte met geweld over den zeedijk heen, en naderde, voortgestuwd door den hevigen wind, met eenen geweldigen aandrang het dorp. Al wat buiten het dorp woonde, vlugtte herwaarts; het vee trachtte men zoo veel mogelijk op de hoogste deelen des eilands te brengen, waarop het dan ook behouden bleef.&mdash;De wind nam intusschen in hevigheid toe; het water liep, bij zijnen hoogsten stand, ter diepte van ruim eene Ned. el over de dijken, baande zich met hevigen golfslag door de Zuiderduinen, welke op onderscheidene plaatsen weggeslagen werden, eenen doortogt, verwoestte geheel of ten deele verscheidene landbouwershoeven, schuren en andere zaken, hooi, graan en andere levensbehoeften, en bedekte de landerijen geheel onder het van de duinen losgescheurde en afgestoken land.&mdash;
+<p>Bovendien was het in het voormelde jaar, 1825, gebleken, dat de kunstmatige<note n=1>De kunstmatige zeeweringen op dit eiland bestaan in dijken, wier buitenzijden beschoten zijn met opstaande planken of schrooten, die bevestigd zijn aan strekkende balken, welke ondersteund worden door ingeheide palen, die met eene tusschenruimte van 1&frac12; à 2 voet langs den geheelen dijk staan.</note> zeeweringen, geene genoegzame sterkte bezaten, om, in tijd van nood, den aandrang des zeewaters te keeren. Zoo was het op den avond van den 5<hi rend=sup>den</hi> Februarij <pb id=pb13 n=13>v.m.j. dat het zeewater met zulk eene snelheid rees, dat het ongeveer ten zeven uren bijna &frac14; Ned. el hooger stond dan bij den hoogsten waterstand van den vloed in November 1824.&mdash;Het opkomend vloedwater stortte met geweld over den zeedijk heen, en naderde, voortgestuwd door den hevigen wind, met eenen geweldigen aandrang het dorp. Al wat buiten het dorp woonde, vlugtte herwaarts; het vee trachtte men zoo veel mogelijk op de hoogste deelen des eilands te brengen, waarop het dan ook behouden bleef.&mdash;De wind nam intusschen in hevigheid toe; het water liep, bij zijnen hoogsten stand, ter diepte van ruim eene Ned. el over de dijken, baande zich met hevigen golfslag door de Zuiderduinen, welke op onderscheidene plaatsen weggeslagen werden, eenen doortogt, verwoestte geheel of ten deele verscheidene landbouwershoeven, schuren en andere zaken, hooi, graan en andere levensbehoeften, en bedekte de landerijen geheel onder het van de duinen losgescheurde en afgestoken land.&mdash;
 
 <p>Geen wonder dus, dat deze eilanders, na zulke voorvallen en onder zulke omstandigheden, zich de toekomst van hun eiland als hoogst treurig voorstelden.&mdash;Dan, de goede Voorzienigheid waakte ook over <hi rend=sc>Schiermonnikoog</hi>. De vrees van deszelfs bewoners is merkelijk verminderd, of wèl geheel weggenomen, dewijl aan het westeinde des eilands, in eene zuidwaartsche rigting, eene plaat of bank is verrezen, die zich in eene vrij groote uitgestrektheid naar <hi rend=ex>Peazens</hi> rigt. Het is voorzeker opmerkelijk, dat deze plaat of zandbank, welke zich aldaar zonder eenige kunstmatige tegemoetkoming gevormd heeft, en die onder den naam van <hi rend=ex>den Noorman</hi>, zeer verre in het Friesche Gat uitloopt, hier als het ware tot een bolwerk is opgeworpen, die de verkleining van Schiermonnikoog, door aanhoudende afkabbeling der zee, door het vernietigen van den stroomloop, voorkomt.&mdash;
 
@@ -383,7 +380,7 @@
 <pb id=pb23 n=23>
 </body>
 <back id=backmatter>
-<div1 id=extract lang=nl-1700>
+<div1 id=extract lang=nl-1700 type=Appendix>
 <head>EXTRACT UIT DE:</head>
 
 
